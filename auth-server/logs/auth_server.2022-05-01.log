@@ -1,0 +1,985 @@
+2022-05-01 22:38:20,535 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 22:38:20,541 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 22:38:20,541 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 22:38:20,869 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:38:22,445 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 22:38:22,492 - limitTime:5.0
+2022-05-01 22:38:22,953 - isMultiInstance:false
+2022-05-01 22:38:22,994 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 22:38:23,018 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 22:38:23,019 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 22:38:24,524 - The following profiles are active: dev
+2022-05-01 22:38:25,510 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:38:25,515 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:38:25,823 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 22:38:25,826 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 22:38:25,873 - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2022-05-01 22:38:26,034 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:38:26,325 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 22:38:26,653 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:38:26,668 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$17d99313] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:38:26,925 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:38:27,545 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 22:38:27,561 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 22:38:27,562 - Starting service [Tomcat]
+2022-05-01 22:38:27,562 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 22:38:27,759 - Initializing Spring embedded WebApplicationContext
+2022-05-01 22:38:27,759 - Root WebApplicationContext: initialization completed in 3209 ms
+2022-05-01 22:38:28,571 - initializer namespace from System Property :null
+2022-05-01 22:38:28,573 - initializer namespace from System Environment :null
+2022-05-01 22:38:28,574 - initializer namespace from System Property :null
+2022-05-01 22:38:29,343 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationServerConfig': Unsatisfied dependency expressed through field 'tokenStore'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAccessTokenConverter' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+2022-05-01 22:38:29,373 - Stopping service [Tomcat]
+2022-05-01 22:38:29,442 - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.client.listener] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:114)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-01 22:38:29,443 - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-01 22:38:29,444 - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+ java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+ java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+ java.net.DatagramSocket.receive(DatagramSocket.java:812)
+ com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:73)
+ java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-01 22:38:29,466 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-01 22:38:29,474 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationServerConfig': Unsatisfied dependency expressed through field 'tokenStore'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAccessTokenConverter' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.quantization.auth.AuthServerApplication.main(AuthServerApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenStore' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAccessTokenConverter' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.TokenStore]: Factory method 'tokenStore' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAccessTokenConverter' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAccessTokenConverter' defined in class path resource [com/quantization/auth/config/TokenConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:484)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:394)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:366)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1.jwtAccessTokenConverter(<generated>)
+	at com.quantization.auth.config.TokenConfig.tokenStore(TokenConfig.java:47)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1.CGLIB$tokenStore$2(<generated>)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1$$FastClassBySpringCGLIB$$601c3084.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1.tokenStore(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 38 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter]: Factory method 'jwtAccessTokenConverter' threw exception; nested exception is java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 61 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load keys from store: class path resource [oauth2.jks]
+	at org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory.getKeyPair(KeyStoreKeyFactory.java:67)
+	at org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory.getKeyPair(KeyStoreKeyFactory.java:48)
+	at com.quantization.auth.config.TokenConfig.jwtAccessTokenConverter(TokenConfig.java:37)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1.CGLIB$jwtAccessTokenConverter$1(<generated>)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1$$FastClassBySpringCGLIB$$601c3084.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at com.quantization.auth.config.TokenConfig$$EnhancerBySpringCGLIB$$b5b10ad1.jwtAccessTokenConverter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 62 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [oauth2.jks] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory.getKeyPair(KeyStoreKeyFactory.java:57)
+	... 74 common frames omitted
+2022-05-01 22:49:26,702 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 22:49:26,705 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 22:49:26,705 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 22:49:26,969 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:49:28,705 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 22:49:28,757 - limitTime:5.0
+2022-05-01 22:49:29,190 - isMultiInstance:false
+2022-05-01 22:49:29,239 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 22:49:29,266 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 22:49:29,267 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 22:49:30,762 - The following profiles are active: dev
+2022-05-01 22:49:31,802 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:49:31,808 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:49:32,118 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 22:49:32,122 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 22:49:32,163 - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2022-05-01 22:49:32,342 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 22:49:32,633 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 22:49:32,947 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:49:32,959 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$e1d8dde3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:49:33,268 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 22:49:33,879 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 22:49:33,896 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 22:49:33,897 - Starting service [Tomcat]
+2022-05-01 22:49:33,897 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 22:49:34,082 - Initializing Spring embedded WebApplicationContext
+2022-05-01 22:49:34,082 - Root WebApplicationContext: initialization completed in 3296 ms
+2022-05-01 22:49:34,934 - initializer namespace from System Property :null
+2022-05-01 22:49:34,936 - initializer namespace from System Environment :null
+2022-05-01 22:49:34,937 - initializer namespace from System Property :null
+2022-05-01 22:49:37,380 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e280147, org.springframework.security.web.context.SecurityContextPersistenceFilter@3328c37d, org.springframework.security.web.header.HeaderWriterFilter@58698075, org.springframework.security.web.authentication.logout.LogoutFilter@73a0a1f3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@30acccc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ce4cf6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f4db09f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aa4444c, org.springframework.security.web.session.SessionManagementFilter@77b17b5e, org.springframework.security.web.access.ExceptionTranslationFilter@59555dae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19e932b0]
+2022-05-01 22:49:37,394 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45ff6a26, org.springframework.security.web.context.SecurityContextPersistenceFilter@578c9497, org.springframework.security.web.header.HeaderWriterFilter@6f5124d6, org.springframework.security.web.csrf.CsrfFilter@71d2f3fe, org.springframework.security.web.authentication.logout.LogoutFilter@3425f229, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19494785, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d282349, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3eb8c779, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16597207, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31a77777, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57b69201, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c5692a7, org.springframework.security.web.session.SessionManagementFilter@97a77c1, org.springframework.security.web.access.ExceptionTranslationFilter@26280cb5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27978e46]
+2022-05-01 22:49:37,422 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 22:49:37,422 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 22:49:37,431 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 22:49:37,431 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 22:49:37,731 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 22:49:37,897 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 22:49:38,274 - LiveReload server is running on port 35729
+2022-05-01 22:49:39,268 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 22:49:39,336 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 22:49:39,380 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 22:49:39,385 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 22:49:39,525 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 22:49:39,570 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 22:49:40,136 - Started AuthServerApplication in 14.807 seconds (JVM running for 15.699)
+2022-05-01 22:49:40,178 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 22:49:40,179 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 22:49:40,180 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 22:49:40,180 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 22:49:40,181 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 22:49:40,181 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 22:49:50,134 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 22:49:50,136 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 22:49:50,147 - Completed initialization in 10 ms
+2022-05-01 22:50:00,715 - 请求认证的用户名：admin
+2022-05-01 22:50:02,077 - {dataSource-1} inited
+2022-05-01 22:50:02,089 - ==>  Preparing: SELECT id,update_date,nick_name,mobile,is_account_non_locked,password,is_credentials_non_expired,is_account_non_expired,is_enabled,email,create_date,username FROM sys_user WHERE (username = ?) 
+2022-05-01 22:50:02,119 - ==> Parameters: admin(String)
+2022-05-01 22:50:02,159 - <==      Total: 1
+2022-05-01 22:50:02,163 - ==>  Preparing: SELECT DISTINCT p.id, p.parent_id, p.name, p.code, p.url, p.type, p.icon, p.remark, p.create_date, p.update_date FROM sys_user AS u LEFT JOIN sys_user_role AS ur ON u.id = ur.user_id LEFT JOIN sys_role AS r ON r.id = ur.role_id LEFT JOIN sys_role_permission AS rp ON r.id = rp.role_id LEFT JOIN sys_permission AS p ON p.id = rp.permission_id WHERE u.id = ? ORDER BY p.id 
+2022-05-01 22:50:02,164 - ==> Parameters: 9(Long)
+2022-05-01 22:50:02,194 - <==      Total: 17
+2022-05-01 23:11:11,924 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 23:11:11,927 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 23:11:11,927 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 23:11:12,177 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:11:13,899 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 23:11:13,950 - limitTime:5.0
+2022-05-01 23:11:14,386 - isMultiInstance:false
+2022-05-01 23:11:14,424 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:11:14,452 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:11:14,452 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:11:15,973 - The following profiles are active: dev
+2022-05-01 23:11:16,979 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:11:16,984 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:11:17,286 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:11:17,290 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:11:17,334 - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2022-05-01 23:11:17,483 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:11:17,785 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:11:18,086 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:11:18,097 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$b4d92ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:11:18,398 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:11:19,022 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:11:19,041 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:11:19,042 - Starting service [Tomcat]
+2022-05-01 23:11:19,043 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:11:19,222 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:11:19,222 - Root WebApplicationContext: initialization completed in 3227 ms
+2022-05-01 23:11:20,027 - initializer namespace from System Property :null
+2022-05-01 23:11:20,029 - initializer namespace from System Environment :null
+2022-05-01 23:11:20,031 - initializer namespace from System Property :null
+2022-05-01 23:11:22,542 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b816146, org.springframework.security.web.context.SecurityContextPersistenceFilter@77b17b5e, org.springframework.security.web.header.HeaderWriterFilter@59555dae, org.springframework.security.web.authentication.logout.LogoutFilter@5d374dc5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@352ea3c6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3328c37d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@490f20d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@236dceaa, org.springframework.security.web.session.SessionManagementFilter@58698075, org.springframework.security.web.access.ExceptionTranslationFilter@7d60c78e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3cc7cf97]
+2022-05-01 23:11:22,559 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7acd1627, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f5124d6, org.springframework.security.web.header.HeaderWriterFilter@303dc2a3, org.springframework.security.web.csrf.CsrfFilter@7edd1bda, org.springframework.security.web.authentication.logout.LogoutFilter@d282349, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27978e46, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31a77777, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@16597207, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@61b341e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@97a77c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@578c9497, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45ff6a26, org.springframework.security.web.session.SessionManagementFilter@26280cb5, org.springframework.security.web.access.ExceptionTranslationFilter@71d2f3fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b9e0be8]
+2022-05-01 23:11:22,587 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:11:22,588 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:11:22,599 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:11:22,599 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:11:22,891 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:11:23,062 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:11:23,442 - LiveReload server is running on port 35729
+2022-05-01 23:11:24,469 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:11:24,546 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:11:24,593 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:11:24,597 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:11:24,732 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:11:24,787 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:11:25,277 - Started AuthServerApplication in 14.779 seconds (JVM running for 15.617)
+2022-05-01 23:11:25,324 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 23:11:25,325 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:11:25,326 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 23:11:25,327 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:11:25,328 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 23:11:25,328 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:11:40,815 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:11:40,816 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:11:40,827 - Completed initialization in 11 ms
+2022-05-01 23:11:46,652 - 请求认证的用户名：admin
+2022-05-01 23:11:48,011 - {dataSource-1} inited
+2022-05-01 23:11:48,024 - ==>  Preparing: SELECT id,update_date,nick_name,mobile,is_account_non_locked,password,is_credentials_non_expired,is_account_non_expired,is_enabled,email,create_date,username FROM sys_user WHERE (username = ?) 
+2022-05-01 23:11:48,055 - ==> Parameters: admin(String)
+2022-05-01 23:11:48,094 - <==      Total: 1
+2022-05-01 23:11:48,097 - ==>  Preparing: SELECT DISTINCT p.id, p.parent_id, p.name, p.code, p.url, p.type, p.icon, p.remark, p.create_date, p.update_date FROM sys_user AS u LEFT JOIN sys_user_role AS ur ON u.id = ur.user_id LEFT JOIN sys_role AS r ON r.id = ur.role_id LEFT JOIN sys_role_permission AS rp ON r.id = rp.role_id LEFT JOIN sys_permission AS p ON p.id = rp.permission_id WHERE u.id = ? ORDER BY p.id 
+2022-05-01 23:11:48,098 - ==> Parameters: 9(Long)
+2022-05-01 23:11:48,121 - <==      Total: 17
+2022-05-01 23:16:05,835 - De-registering from Nacos Server now...
+2022-05-01 23:16:05,836 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:16:05,836 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:16:05,860 - De-registration finished.
+2022-05-01 23:16:05,862 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:16:05,896 - {dataSource-1} closed
+2022-05-01 23:16:06,973 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:16:09,081 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:16:09,106 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:16:09,107 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:16:11,082 - The following profiles are active: dev
+2022-05-01 23:16:11,773 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:16:11,774 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:16:11,787 - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2022-05-01 23:16:11,941 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:16:11,986 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:16:11,989 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$b4d92ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:16:11,998 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:16:12,060 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:16:12,295 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:16:12,296 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:16:12,296 - Starting service [Tomcat]
+2022-05-01 23:16:12,297 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:16:12,332 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:16:12,332 - Root WebApplicationContext: initialization completed in 1246 ms
+2022-05-01 23:16:13,294 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c67ac58, org.springframework.security.web.context.SecurityContextPersistenceFilter@753c8a97, org.springframework.security.web.header.HeaderWriterFilter@145cd28c, org.springframework.security.web.authentication.logout.LogoutFilter@59fa1ff6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c96929e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ff20afe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d486d3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a76c95b, org.springframework.security.web.session.SessionManagementFilter@1af9fcf8, org.springframework.security.web.access.ExceptionTranslationFilter@39847a14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7fde4e]
+2022-05-01 23:16:13,301 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74177a28, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f534563, org.springframework.security.web.header.HeaderWriterFilter@28c4c668, org.springframework.security.web.csrf.CsrfFilter@1e324696, org.springframework.security.web.authentication.logout.LogoutFilter@6b564165, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71e90bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@566243e0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5651c4f0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ef78a63, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6627dac2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@68dea7e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@253935f6, org.springframework.security.web.session.SessionManagementFilter@73d9ab78, org.springframework.security.web.access.ExceptionTranslationFilter@1b004db6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23c0349e]
+2022-05-01 23:16:13,310 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:16:13,310 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:16:13,388 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:16:13,443 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:16:13,558 - LiveReload server is running on port 35729
+2022-05-01 23:16:14,529 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:16:14,567 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:16:14,577 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:16:14,578 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:16:14,579 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:16:14,603 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:16:15,105 - Started AuthServerApplication in 8.682 seconds (JVM running for 305.442)
+2022-05-01 23:16:15,108 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:16:15,108 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:16:15,109 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:16:15,111 - Condition evaluation unchanged
+2022-05-01 23:18:14,504 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:18:14,505 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:18:14,509 - Completed initialization in 4 ms
+2022-05-01 23:18:30,750 - {dataSource-2} inited
+2022-05-01 23:18:30,922 - 请求认证的用户名：admin
+2022-05-01 23:18:30,926 - ==>  Preparing: SELECT id,update_date,nick_name,mobile,is_account_non_locked,password,is_credentials_non_expired,is_account_non_expired,is_enabled,email,create_date,username FROM sys_user WHERE (username = ?) 
+2022-05-01 23:18:30,927 - ==> Parameters: admin(String)
+2022-05-01 23:18:30,943 - <==      Total: 1
+2022-05-01 23:18:30,946 - ==>  Preparing: SELECT DISTINCT p.id, p.parent_id, p.name, p.code, p.url, p.type, p.icon, p.remark, p.create_date, p.update_date FROM sys_user AS u LEFT JOIN sys_user_role AS ur ON u.id = ur.user_id LEFT JOIN sys_role AS r ON r.id = ur.role_id LEFT JOIN sys_role_permission AS rp ON r.id = rp.role_id LEFT JOIN sys_permission AS p ON p.id = rp.permission_id WHERE u.id = ? ORDER BY p.id 
+2022-05-01 23:18:30,947 - ==> Parameters: 9(Long)
+2022-05-01 23:18:30,968 - <==      Total: 17
+2022-05-01 23:20:56,352 - De-registering from Nacos Server now...
+2022-05-01 23:20:56,353 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:20:56,353 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:20:56,382 - De-registration finished.
+2022-05-01 23:20:56,384 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:20:56,405 - {dataSource-2} closed
+2022-05-01 23:20:57,561 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:20:59,710 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:20:59,741 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:20:59,741 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:21:01,741 - The following profiles are active: dev
+2022-05-01 23:21:02,419 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:21:02,419 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:21:02,431 - Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2022-05-01 23:21:02,527 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:21:02,559 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:02,562 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$b4d92ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:02,569 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:02,598 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:21:02,752 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:21:02,753 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:21:02,753 - Starting service [Tomcat]
+2022-05-01 23:21:02,754 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:21:02,791 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:21:02,791 - Root WebApplicationContext: initialization completed in 1046 ms
+2022-05-01 23:21:03,606 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41cd402d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1355dd6d, org.springframework.security.web.header.HeaderWriterFilter@400d156d, org.springframework.security.web.authentication.logout.LogoutFilter@65a704c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@359fda45, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2013cb3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@89d0428, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2901636b, org.springframework.security.web.session.SessionManagementFilter@3d01ceda, org.springframework.security.web.access.ExceptionTranslationFilter@6bfb01dc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a112b02]
+2022-05-01 23:21:03,611 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b3a493b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b231dd1, org.springframework.security.web.header.HeaderWriterFilter@972edea, org.springframework.security.web.csrf.CsrfFilter@58097bd5, org.springframework.security.web.authentication.logout.LogoutFilter@5d338a27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49c01987, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@475cfacb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5941083d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@68f2278, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59ce1ec1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@474da5af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10043eb3, org.springframework.security.web.session.SessionManagementFilter@38e71ecb, org.springframework.security.web.access.ExceptionTranslationFilter@5194716d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77e0bd3c]
+2022-05-01 23:21:03,619 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:21:03,619 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:21:03,682 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:21:03,727 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:21:03,821 - LiveReload server is running on port 35729
+2022-05-01 23:21:04,871 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:21:04,904 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:21:04,913 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:21:04,913 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:21:04,914 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:21:04,948 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:21:05,449 - Started AuthServerApplication in 8.415 seconds (JVM running for 595.789)
+2022-05-01 23:21:05,452 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:21:05,452 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:21:05,452 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:21:05,454 - Condition evaluation unchanged
+2022-05-01 23:21:34,628 - De-registering from Nacos Server now...
+2022-05-01 23:21:34,630 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:21:34,630 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:21:34,655 - De-registration finished.
+2022-05-01 23:21:34,656 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:21:35,838 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:37,982 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:21:38,008 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:21:38,009 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:21:39,995 - The following profiles are active: dev
+2022-05-01 23:21:40,390 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:21:40,391 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:21:40,400 - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2022-05-01 23:21:40,486 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:21:40,514 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:40,516 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$b4d92ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:40,522 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:21:40,553 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:21:40,723 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:21:40,724 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:21:40,724 - Starting service [Tomcat]
+2022-05-01 23:21:40,724 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:21:40,761 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:21:40,761 - Root WebApplicationContext: initialization completed in 763 ms
+2022-05-01 23:21:41,649 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@316d386d, org.springframework.security.web.context.SecurityContextPersistenceFilter@279cf78f, org.springframework.security.web.header.HeaderWriterFilter@128ac2d, org.springframework.security.web.authentication.logout.LogoutFilter@7c13b6f0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@186b57ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fe5f38c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be87f99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6906b693, org.springframework.security.web.session.SessionManagementFilter@144c741e, org.springframework.security.web.access.ExceptionTranslationFilter@6a984931, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c83dbf4]
+2022-05-01 23:21:41,653 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ad946cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bef2d35, org.springframework.security.web.header.HeaderWriterFilter@591dfa56, org.springframework.security.web.csrf.CsrfFilter@138c1da0, org.springframework.security.web.authentication.logout.LogoutFilter@3c58bcea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a0059b2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@30cf1eaa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3a0105f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@485f40ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34ad561c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@254d595, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bc50450, org.springframework.security.web.session.SessionManagementFilter@58fd5a97, org.springframework.security.web.access.ExceptionTranslationFilter@2b869b77, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13495d34]
+2022-05-01 23:21:41,659 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:21:41,659 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:21:41,712 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:21:41,772 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:21:41,888 - LiveReload server is running on port 35729
+2022-05-01 23:21:42,822 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:21:42,846 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:21:42,854 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:21:42,855 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:21:42,856 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:21:42,894 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:21:43,362 - Started AuthServerApplication in 8.067 seconds (JVM running for 633.701)
+2022-05-01 23:21:43,364 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=4
+2022-05-01 23:21:43,364 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=4
+2022-05-01 23:21:43,364 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=4
+2022-05-01 23:21:43,366 - Condition evaluation unchanged
+2022-05-01 23:22:30,678 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 23:22:30,681 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 23:22:30,682 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 23:22:30,939 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:22:32,646 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 23:22:32,690 - limitTime:5.0
+2022-05-01 23:22:33,119 - isMultiInstance:false
+2022-05-01 23:22:33,162 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:22:33,190 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:22:33,191 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:22:34,750 - The following profiles are active: dev
+2022-05-01 23:22:35,870 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:22:35,876 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:22:36,175 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:22:36,180 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:22:36,237 - Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2022-05-01 23:22:36,385 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:22:36,680 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:22:36,975 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:22:36,987 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$e6454de9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:22:37,285 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:22:37,872 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:22:37,886 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:22:37,888 - Starting service [Tomcat]
+2022-05-01 23:22:37,888 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:22:38,057 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:22:38,057 - Root WebApplicationContext: initialization completed in 3287 ms
+2022-05-01 23:22:38,925 - initializer namespace from System Property :null
+2022-05-01 23:22:38,927 - initializer namespace from System Environment :null
+2022-05-01 23:22:38,929 - initializer namespace from System Property :null
+2022-05-01 23:22:41,328 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34b9a92f, org.springframework.security.web.context.SecurityContextPersistenceFilter@52e5f000, org.springframework.security.web.header.HeaderWriterFilter@f2707af, org.springframework.security.web.authentication.logout.LogoutFilter@7d60c78e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21c2fcfe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59d49f0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@438f5512, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45b1b11e, org.springframework.security.web.session.SessionManagementFilter@1d3d35b, org.springframework.security.web.access.ExceptionTranslationFilter@a34e3a1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4212ff42]
+2022-05-01 23:22:41,344 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39d605ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c7d8c8, org.springframework.security.web.header.HeaderWriterFilter@4dd48e31, org.springframework.security.web.csrf.CsrfFilter@1d51082, org.springframework.security.web.authentication.logout.LogoutFilter@30acccc9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e280147, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@352ea3c6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6188a0ad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27ea1a7c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5efc9f4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@373027a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77a9726a, org.springframework.security.web.session.SessionManagementFilter@642cc609, org.springframework.security.web.access.ExceptionTranslationFilter@1df8538c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b816146]
+2022-05-01 23:22:41,371 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:22:41,372 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:22:41,383 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:22:41,384 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:22:41,680 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:22:41,866 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:22:42,228 - LiveReload server is running on port 35729
+2022-05-01 23:22:43,314 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:22:43,384 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:22:43,435 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:22:43,442 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:22:43,592 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:22:43,638 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:22:44,165 - Started AuthServerApplication in 14.837 seconds (JVM running for 15.71)
+2022-05-01 23:22:44,205 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 23:22:44,206 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:22:44,207 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 23:22:44,207 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:22:44,208 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 23:22:44,208 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:28:16,810 - De-registering from Nacos Server now...
+2022-05-01 23:28:16,812 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:28:16,813 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:28:16,867 - De-registration finished.
+2022-05-01 23:28:16,870 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:28:18,071 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:28:20,178 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:28:20,201 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:28:20,202 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:28:22,185 - The following profiles are active: dev
+2022-05-01 23:28:22,204 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.quantization.auth.AuthServerApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'authorizationServerConfig' for bean class [com.quantization.auth.test.AuthorizationServerConfig] conflicts with existing, non-compatible bean definition of same name and class [com.quantization.auth.config.AuthorizationServerConfig]
+2022-05-01 23:28:22,210 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.quantization.auth.AuthServerApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'authorizationServerConfig' for bean class [com.quantization.auth.test.AuthorizationServerConfig] conflicts with existing, non-compatible bean definition of same name and class [com.quantization.auth.config.AuthorizationServerConfig]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:325)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:242)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.quantization.auth.AuthServerApplication.main(AuthServerApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'authorizationServerConfig' for bean class [com.quantization.auth.test.AuthorizationServerConfig] conflicts with existing, non-compatible bean definition of same name and class [com.quantization.auth.config.AuthorizationServerConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:290)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 18 common frames omitted
+2022-05-01 23:30:56,879 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:30:59,005 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:30:59,030 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:30:59,031 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:31:01,016 - The following profiles are active: dev
+2022-05-01 23:31:01,712 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:31:01,712 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:31:01,727 - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-05-01 23:31:01,872 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:31:01,913 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:31:01,916 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$e6454de9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:31:01,926 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:31:01,983 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:31:02,159 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:31:02,160 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:31:02,160 - Starting service [Tomcat]
+2022-05-01 23:31:02,161 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:31:02,197 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:31:02,197 - Root WebApplicationContext: initialization completed in 1177 ms
+2022-05-01 23:31:03,212 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@224700f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b6bd61f, org.springframework.security.web.header.HeaderWriterFilter@c4d797b, org.springframework.security.web.authentication.logout.LogoutFilter@eaaa6a2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@557d95c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65103bd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f110af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@95b32c8, org.springframework.security.web.session.SessionManagementFilter@6f4ad8c2, org.springframework.security.web.access.ExceptionTranslationFilter@6edc1530, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58c8f861]
+2022-05-01 23:31:03,221 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c322b7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6aa1697a, org.springframework.security.web.header.HeaderWriterFilter@29d79934, org.springframework.security.web.csrf.CsrfFilter@99a1fb5, org.springframework.security.web.authentication.logout.LogoutFilter@6a56cc12, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5eb8f833, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@30f83dc5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3caf38da, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@33be5d5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b5a0895, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e5122f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@254f361c, org.springframework.security.web.session.SessionManagementFilter@339faf0b, org.springframework.security.web.access.ExceptionTranslationFilter@7e0feebd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a135dd5]
+2022-05-01 23:31:03,232 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:31:03,232 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:31:03,318 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:31:03,437 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:31:03,550 - LiveReload server is running on port 35729
+2022-05-01 23:31:04,522 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:31:04,556 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:31:04,577 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:31:04,579 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:31:04,581 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:31:04,607 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:31:05,109 - Started AuthServerApplication in 8.812 seconds (JVM running for 516.654)
+2022-05-01 23:31:05,112 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:31:05,112 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:31:05,113 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:31:05,116 - Condition evaluation unchanged
+2022-05-01 23:32:12,436 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 23:32:12,439 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 23:32:12,439 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 23:32:12,728 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:32:14,397 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 23:32:14,450 - limitTime:5.0
+2022-05-01 23:32:14,915 - isMultiInstance:false
+2022-05-01 23:32:14,965 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:32:14,993 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:32:14,994 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:32:16,456 - The following profiles are active: dev
+2022-05-01 23:32:17,651 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:32:17,658 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:32:18,006 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:32:18,009 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:32:18,062 - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2022-05-01 23:32:18,232 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:32:18,623 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:32:18,969 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:32:18,986 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$5358035f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:32:19,330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:32:20,077 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:32:20,097 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:32:20,098 - Starting service [Tomcat]
+2022-05-01 23:32:20,099 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:32:20,299 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:32:20,300 - Root WebApplicationContext: initialization completed in 3819 ms
+2022-05-01 23:32:21,326 - initializer namespace from System Property :null
+2022-05-01 23:32:21,328 - initializer namespace from System Environment :null
+2022-05-01 23:32:21,330 - initializer namespace from System Property :null
+2022-05-01 23:32:24,356 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ae6cfcd, org.springframework.security.web.context.SecurityContextPersistenceFilter@23901bf3, org.springframework.security.web.header.HeaderWriterFilter@4bfe6bda, org.springframework.security.web.authentication.logout.LogoutFilter@65c89969, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7d2ac492, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@632cfeb2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d32e19e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35f50f94, org.springframework.security.web.session.SessionManagementFilter@33696c0c, org.springframework.security.web.access.ExceptionTranslationFilter@f77c91b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5239560b]
+2022-05-01 23:32:24,373 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b4bb8d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3be55bc7, org.springframework.security.web.header.HeaderWriterFilter@21c2fcfe, org.springframework.security.web.csrf.CsrfFilter@33aa090c, org.springframework.security.web.authentication.logout.LogoutFilter@45b1b11e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ae157ca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2593f539, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@429f6843, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3bb4e76f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a076fc1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c144f73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@669f5929, org.springframework.security.web.session.SessionManagementFilter@424373a3, org.springframework.security.web.access.ExceptionTranslationFilter@5a1570da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@107853e8]
+2022-05-01 23:32:24,407 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:32:24,407 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:32:24,423 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:32:24,423 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:32:24,771 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:32:24,955 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:32:25,372 - LiveReload server is running on port 35729
+2022-05-01 23:32:26,487 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:32:26,649 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:32:26,699 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:32:26,705 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:32:26,850 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:32:26,891 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:32:27,576 - Started AuthServerApplication in 16.653 seconds (JVM running for 17.608)
+2022-05-01 23:32:27,633 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 23:32:27,636 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:32:27,637 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 23:32:27,639 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:32:27,642 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 23:32:27,642 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:32:47,447 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:32:47,449 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:32:47,463 - Completed initialization in 14 ms
+2022-05-01 23:32:52,742 - 请求认证的用户名：admin
+2022-05-01 23:32:54,116 - {dataSource-1} inited
+2022-05-01 23:32:54,129 - ==>  Preparing: SELECT id,update_date,nick_name,mobile,is_account_non_locked,password,is_credentials_non_expired,is_account_non_expired,is_enabled,email,create_date,username FROM sys_user WHERE (username = ?) 
+2022-05-01 23:32:54,158 - ==> Parameters: admin(String)
+2022-05-01 23:32:54,202 - <==      Total: 1
+2022-05-01 23:32:54,206 - ==>  Preparing: SELECT DISTINCT p.id, p.parent_id, p.name, p.code, p.url, p.type, p.icon, p.remark, p.create_date, p.update_date FROM sys_user AS u LEFT JOIN sys_user_role AS ur ON u.id = ur.user_id LEFT JOIN sys_role AS r ON r.id = ur.role_id LEFT JOIN sys_role_permission AS rp ON r.id = rp.role_id LEFT JOIN sys_permission AS p ON p.id = rp.permission_id WHERE u.id = ? ORDER BY p.id 
+2022-05-01 23:32:54,207 - ==> Parameters: 9(Long)
+2022-05-01 23:32:54,228 - <==      Total: 17
+2022-05-01 23:33:02,520 - Handling error: InvalidGrantException, Invalid authorization code: wZKcA2
+2022-05-01 23:33:02,569 - Resolved [error="invalid_grant", error_description="Invalid authorization code: wZKcA2"]
+2022-05-01 23:34:57,043 - De-registering from Nacos Server now...
+2022-05-01 23:34:57,044 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:34:57,044 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:34:57,067 - De-registration finished.
+2022-05-01 23:34:57,069 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:34:57,108 - {dataSource-1} closed
+2022-05-01 23:34:58,231 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:35:00,384 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:35:00,408 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:35:00,408 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:35:02,383 - The following profiles are active: dev
+2022-05-01 23:35:03,086 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:35:03,087 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:35:03,098 - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2022-05-01 23:35:03,228 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:35:03,272 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:35:03,275 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$5358035f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:35:03,287 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:35:03,342 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:35:03,518 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:35:03,519 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:35:03,519 - Starting service [Tomcat]
+2022-05-01 23:35:03,520 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:35:03,560 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:35:03,561 - Root WebApplicationContext: initialization completed in 1175 ms
+2022-05-01 23:35:04,531 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@162213f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@46df276, org.springframework.security.web.header.HeaderWriterFilter@7a60fcec, org.springframework.security.web.authentication.logout.LogoutFilter@463e666d, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@29348d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@53c168be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d395256, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40434e81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14a46792, org.springframework.security.web.session.SessionManagementFilter@7ba2d4e9, org.springframework.security.web.access.ExceptionTranslationFilter@2f02ddf0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54b73a80]
+2022-05-01 23:35:04,538 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76b1bac9, org.springframework.security.web.context.SecurityContextPersistenceFilter@160b3cd8, org.springframework.security.web.header.HeaderWriterFilter@5345aef1, org.springframework.security.web.csrf.CsrfFilter@714b8931, org.springframework.security.web.authentication.logout.LogoutFilter@1d9f0a09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1976ebf0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@600f8b1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@780c9461, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@49f5cf5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62b6dbeb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c7ad36a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@560bc9fb, org.springframework.security.web.session.SessionManagementFilter@3ba4289c, org.springframework.security.web.access.ExceptionTranslationFilter@2eab5c5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6dec6bfd]
+2022-05-01 23:35:04,548 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:35:04,549 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:35:04,650 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:35:04,698 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:35:04,804 - LiveReload server is running on port 35729
+2022-05-01 23:35:05,709 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:35:05,740 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:35:05,749 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:35:05,750 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:35:05,751 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:35:05,782 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:35:06,214 - Started AuthServerApplication in 8.54 seconds (JVM running for 176.245)
+2022-05-01 23:35:06,216 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:35:06,216 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:35:06,217 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=2
+2022-05-01 23:35:06,219 - Condition evaluation unchanged
+2022-05-01 23:36:24,258 - failed to request http://101.43.110.173:31370/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22192.168.1.10%22%2C%22metadata%22%3A%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A39270%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40auth-server%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1%7D&app=unknown&serviceName=DEFAULT_GROUP%40%40auth-server&encoding=UTF-8&namespaceId=public from 101.43.110.173
+2022-05-01 23:36:24,263 - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:413)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:454)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:36:24,264 - request 101.43.110.173:31370 failed.
+com.alibaba.nacos.api.exception.NacosException: failed to req API:101.43.110.173:31370/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:427)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:454)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:36:24,265 - [CLIENT-BEAT] failed to send beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([101.43.110.173:31370]) tried: failed to req API:101.43.110.173:31370/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:467)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:36:48,050 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:36:48,051 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:36:48,054 - Completed initialization in 3 ms
+2022-05-01 23:36:49,168 - {dataSource-2} inited
+2022-05-01 23:36:59,834 - De-registering from Nacos Server now...
+2022-05-01 23:36:59,834 - [BEAT] removing beat: DEFAULT_GROUP@@auth-server:192.168.1.10:39270 from beat map.
+2022-05-01 23:36:59,834 - [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{},"port":39270,"weight":1}
+2022-05-01 23:36:59,866 - De-registration finished.
+2022-05-01 23:36:59,867 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:36:59,876 - {dataSource-2} closed
+2022-05-01 23:37:01,037 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:37:03,166 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:37:03,192 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:37:03,193 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:37:05,201 - The following profiles are active: dev
+2022-05-01 23:37:05,784 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:37:05,784 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:37:05,798 - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2022-05-01 23:37:05,887 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:37:05,919 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:37:05,921 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$5358035f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:37:05,929 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:37:05,960 - The MBean registry cannot be disabled because it has already been initialised
+2022-05-01 23:37:06,146 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:37:06,147 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:37:06,148 - Starting service [Tomcat]
+2022-05-01 23:37:06,148 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:37:06,184 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:37:06,184 - Root WebApplicationContext: initialization completed in 977 ms
+2022-05-01 23:37:07,169 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2968607e, org.springframework.security.web.context.SecurityContextPersistenceFilter@749d1e84, org.springframework.security.web.header.HeaderWriterFilter@44d800b5, org.springframework.security.web.authentication.logout.LogoutFilter@6b1ead39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@241c361d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a3b6b1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ee21745, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c25ce81, org.springframework.security.web.session.SessionManagementFilter@3021223d, org.springframework.security.web.access.ExceptionTranslationFilter@2343ab7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f49e722]
+2022-05-01 23:37:07,175 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55f2f146, org.springframework.security.web.context.SecurityContextPersistenceFilter@7be4aa2f, org.springframework.security.web.header.HeaderWriterFilter@76b42ce8, org.springframework.security.web.csrf.CsrfFilter@7a6d18a4, org.springframework.security.web.authentication.logout.LogoutFilter@24b29e9e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@faba9e2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31d88d18, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73914497, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72b96211, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e26ad93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29220dd3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@212707be, org.springframework.security.web.session.SessionManagementFilter@69de2788, org.springframework.security.web.access.ExceptionTranslationFilter@5cfb378f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2851c285]
+2022-05-01 23:37:07,186 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:37:07,186 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:37:07,268 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:37:07,336 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:37:07,466 - LiveReload server is running on port 35729
+2022-05-01 23:37:08,564 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:37:08,593 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:37:08,602 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:37:08,603 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:37:08,603 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:37:08,633 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:37:09,178 - Started AuthServerApplication in 8.678 seconds (JVM running for 299.21)
+2022-05-01 23:37:09,180 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:37:09,181 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:37:09,182 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=3
+2022-05-01 23:37:09,183 - Condition evaluation unchanged
+2022-05-01 23:37:22,636 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:37:22,638 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:37:22,642 - Completed initialization in 4 ms
+2022-05-01 23:37:23,727 - {dataSource-3} inited
+2022-05-01 23:42:48,330 - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://101.43.110.173:31370， err : Read timed out
+2022-05-01 23:42:48,331 - no available server, currentServerAddr : http://101.43.110.173:31370
+2022-05-01 23:42:48,332 - [fixed-101.43.110.173_31370] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://101.43.110.173:31370
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:42:48,332 - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://101.43.110.173:31370
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:170)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:64)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:377)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:352)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:512)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:45:36,551 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 23:45:36,554 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 23:45:36,554 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 23:45:36,863 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:45:38,531 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 23:45:38,582 - limitTime:5.0
+2022-05-01 23:45:39,128 - isMultiInstance:false
+2022-05-01 23:45:39,186 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:45:39,220 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:45:39,221 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:45:40,584 - The following profiles are active: dev
+2022-05-01 23:45:41,893 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:45:41,899 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:45:42,415 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:45:42,422 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:45:42,489 - Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2022-05-01 23:45:42,738 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:45:43,204 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:45:43,625 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:45:43,658 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$5bb3b849] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:45:44,202 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:45:45,388 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:45:45,413 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:45:45,414 - Starting service [Tomcat]
+2022-05-01 23:45:45,415 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:45:45,703 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:45:45,704 - Root WebApplicationContext: initialization completed in 5086 ms
+2022-05-01 23:45:47,054 - initializer namespace from System Property :null
+2022-05-01 23:45:47,056 - initializer namespace from System Environment :null
+2022-05-01 23:45:47,058 - initializer namespace from System Property :null
+2022-05-01 23:45:51,730 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e7af19, org.springframework.security.web.context.SecurityContextPersistenceFilter@490f20d4, org.springframework.security.web.header.HeaderWriterFilter@f8fe16c, org.springframework.security.web.authentication.logout.LogoutFilter@5b32c347, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7aa4444c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f4db09f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b970105, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@997bb07, org.springframework.security.web.session.SessionManagementFilter@35e1aa5, org.springframework.security.web.access.ExceptionTranslationFilter@607323b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5efc9f4f]
+2022-05-01 23:45:51,752 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a01ddbc, org.springframework.security.web.context.SecurityContextPersistenceFilter@27978e46, org.springframework.security.web.header.HeaderWriterFilter@1b9e0be8, org.springframework.security.web.csrf.CsrfFilter@57b69201, org.springframework.security.web.authentication.logout.LogoutFilter@16597207, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@37a97bb8, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@61b341e9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@556e94b8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1689106e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72e3d37a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19494785, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8e77efb, org.springframework.security.web.session.SessionManagementFilter@3c388752, org.springframework.security.web.access.ExceptionTranslationFilter@57e04836, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71420460]
+2022-05-01 23:45:51,793 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:45:51,794 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:45:51,829 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:45:51,830 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:45:52,362 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:45:52,683 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:45:53,405 - LiveReload server is running on port 35729
+2022-05-01 23:45:54,979 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:45:55,105 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:45:55,198 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:45:55,205 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:45:55,389 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:45:55,444 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:45:56,219 - Started AuthServerApplication in 21.049 seconds (JVM running for 21.977)
+2022-05-01 23:45:56,329 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 23:45:56,330 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:45:56,331 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 23:45:56,331 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:45:56,332 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 23:45:56,333 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:46:12,174 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:46:12,176 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:46:12,188 - Completed initialization in 12 ms
+2022-05-01 23:46:13,580 - {dataSource-1} inited
+2022-05-01 23:51:00,591 - failed to request http://101.43.110.173:31370/nacos/v1/ns/instance/beat?beat=%7B%22cluster%22%3A%22DEFAULT%22%2C%22ip%22%3A%22192.168.1.10%22%2C%22metadata%22%3A%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D%2C%22period%22%3A5000%2C%22port%22%3A39270%2C%22scheduled%22%3Afalse%2C%22serviceName%22%3A%22DEFAULT_GROUP%40%40auth-server%22%2C%22stopped%22%3Afalse%2C%22weight%22%3A1%7D&app=unknown&serviceName=DEFAULT_GROUP%40%40auth-server&encoding=UTF-8&namespaceId=public from 101.43.110.173
+2022-05-01 23:51:00,594 - [NA] failed to request 
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1340)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1315)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:85)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:413)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:454)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:51:00,595 - request 101.43.110.173:31370 failed.
+com.alibaba.nacos.api.exception.NacosException: failed to req API:101.43.110.173:31370/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:427)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:454)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:51:00,596 - [CLIENT-BEAT] failed to send beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1}
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/beat after all servers([101.43.110.173:31370]) tried: failed to req API:101.43.110.173:31370/nacos/v1/ns/instance/beat. code:500 msg: java.net.SocketTimeoutException: connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:467)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:389)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:312)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:98)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-01 23:52:07,290 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2022-05-01 23:52:07,293 - The Class-Path manifest attribute in D:\programs\maven\repository\com\sun\xml\bind\jaxb-impl\2.3.0.1\jaxb-impl-2.3.0.1.jar referenced one or more files that do not exist: file:/D:/programs/maven/repository/com/sun/xml/bind/jaxb-impl/2.3.0.1/jaxb-core.jar
+2022-05-01 23:52:07,293 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-01 23:52:07,587 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:52:09,280 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 23:52:09,325 - limitTime:5.0
+2022-05-01 23:52:09,889 - isMultiInstance:false
+2022-05-01 23:52:09,940 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:52:09,963 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 23:52:09,964 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 23:52:11,351 - The following profiles are active: dev
+2022-05-01 23:52:12,907 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:52:12,914 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:52:13,317 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 23:52:13,323 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 23:52:13,385 - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2022-05-01 23:52:13,603 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 23:52:14,138 - BeanFactory id=cff00ee5-ecd1-3980-a4af-2e290d7caaef
+2022-05-01 23:52:14,684 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:52:14,709 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$dd608b2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:52:15,269 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 23:52:16,358 - Tomcat initialized with port(s): 39270 (http)
+2022-05-01 23:52:16,386 - Initializing ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:52:16,388 - Starting service [Tomcat]
+2022-05-01 23:52:16,389 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 23:52:16,714 - Initializing Spring embedded WebApplicationContext
+2022-05-01 23:52:16,714 - Root WebApplicationContext: initialization completed in 5329 ms
+2022-05-01 23:52:17,977 - initializer namespace from System Property :null
+2022-05-01 23:52:17,979 - initializer namespace from System Environment :null
+2022-05-01 23:52:17,980 - initializer namespace from System Property :null
+2022-05-01 23:52:22,875 - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cac3c70, org.springframework.security.web.context.SecurityContextPersistenceFilter@520367ed, org.springframework.security.web.header.HeaderWriterFilter@16f1f5c, org.springframework.security.web.authentication.logout.LogoutFilter@72e7f139, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69aca65e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b9cf274, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50a417e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6205ef8c, org.springframework.security.web.session.SessionManagementFilter@3b862788, org.springframework.security.web.access.ExceptionTranslationFilter@1dda7b11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76d90759]
+2022-05-01 23:52:22,934 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@678d9b9a, org.springframework.security.web.context.SecurityContextPersistenceFilter@26a16f39, org.springframework.security.web.header.HeaderWriterFilter@5ec94136, org.springframework.security.web.csrf.CsrfFilter@279dfc32, org.springframework.security.web.authentication.logout.LogoutFilter@3c25f105, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@39a63d4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6429f749, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24e8f03f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37d9ca76, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3588009c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@215c27ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@524ada, org.springframework.security.web.session.SessionManagementFilter@5d93147c, org.springframework.security.web.access.ExceptionTranslationFilter@d33c130, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69535a4a]
+2022-05-01 23:52:22,993 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:52:22,994 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:52:23,016 - No URLs will be polled as dynamic configuration sources.
+2022-05-01 23:52:23,018 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-01 23:52:23,620 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 23:52:24,086 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-01 23:52:24,741 - LiveReload server is running on port 35729
+2022-05-01 23:52:26,136 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-01 23:52:26,217 - Starting ProtocolHandler ["http-nio-39270"]
+2022-05-01 23:52:26,261 - Tomcat started on port(s): 39270 (http) with context path '/auth'
+2022-05-01 23:52:26,265 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":39270,"scheduled":false,"serviceName":"DEFAULT_GROUP@@auth-server","stopped":false,"weight":1} to beat map.
+2022-05-01 23:52:26,408 - [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@auth-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"weight":1}
+2022-05-01 23:52:26,445 - nacos registry, DEFAULT_GROUP auth-server 192.168.1.10:39270 register finished
+2022-05-01 23:52:27,059 - Started AuthServerApplication in 21.516 seconds (JVM running for 22.696)
+2022-05-01 23:52:27,111 - [fixed-101.43.110.173_31370] [subscribe] auth-server+DEFAULT_GROUP
+2022-05-01 23:52:27,112 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:52:27,113 - [fixed-101.43.110.173_31370] [subscribe] auth-server-dev.yaml+DEFAULT_GROUP
+2022-05-01 23:52:27,113 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server-dev.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:52:27,114 - [fixed-101.43.110.173_31370] [subscribe] auth-server.yaml+DEFAULT_GROUP
+2022-05-01 23:52:27,114 - [fixed-101.43.110.173_31370] [add-listener] ok, tenant=, dataId=auth-server.yaml, group=DEFAULT_GROUP, cnt=1
+2022-05-01 23:52:39,864 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-01 23:52:39,866 - Initializing Servlet 'dispatcherServlet'
+2022-05-01 23:52:39,878 - Completed initialization in 12 ms
+2022-05-01 23:52:45,395 - {dataSource-1} inited

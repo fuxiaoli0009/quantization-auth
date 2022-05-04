@@ -1,0 +1,198 @@
+2022-05-01 13:10:40,094 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 13:10:41,700 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-01 13:10:41,797 - limitTime:5.0
+2022-05-01 13:10:42,263 - isMultiInstance:false
+2022-05-01 13:10:42,281 - parse data from Nacos error,dataId:auth-server,data:# 日志级别，会打印sql语句
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com.quantization.auth.mapper: debug
+server:
+  port: 39270
+  servlet:
+    context-path: /auth
+spring:
+  application:
+    name: auth-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.43.110.173:30370/auth?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: Shenghuo@2022
+    initialSize: 8
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+  jpa:
+    show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+  data:
+    mongodb:
+      uri: mongodb://q_root:Sheng@101.43.110.173:32270/quantization_2022
+  redis:
+    host: 101.43.110.173
+    port: 33370
+    password: 
+    timeout: 6000
+    lettuce:
+      pool:
+        max-wait: 60000
+        max-active: 10
+        max-idle: 5
+        min-idle: 0
+
+mybatis-plus:
+  # 指定实体类所有包
+  type-aliases-package: com.quantization.auth.entities
+
+
+custom:
+  rest:
+    template:
+      connect-timeout: 5000
+      read-timeout: 5000,
+org.yaml.snakeyaml.error.YAMLException: java.nio.charset.MalformedInputException: Input length = 1
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:218)
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:176)
+	at org.yaml.snakeyaml.reader.StreamReader.ensureEnoughData(StreamReader.java:171)
+	at org.yaml.snakeyaml.reader.StreamReader.peek(StreamReader.java:126)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.scanToNextToken(ScannerImpl.java:1177)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:287)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseImplicitDocumentStart.produce(ParserImpl.java:195)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.checkNode(Composer.java:72)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.checkData(BaseConstructor.java:114)
+	at org.yaml.snakeyaml.Yaml$1.hasNext(Yaml.java:543)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.beans.factory.config.YamlMapFactoryBean.createMap(YamlMapFactoryBean.java:124)
+	at org.springframework.beans.factory.config.YamlMapFactoryBean.getObject(YamlMapFactoryBean.java:104)
+	at com.alibaba.cloud.nacos.parser.NacosDataYamlParser.doParse(NacosDataYamlParser.java:40)
+	at com.alibaba.cloud.nacos.parser.AbstractNacosDataParser.parseNacosData(AbstractNacosDataParser.java:80)
+	at com.alibaba.cloud.nacos.parser.AbstractNacosDataParser.parseNacosData(AbstractNacosDataParser.java:85)
+	at com.alibaba.cloud.nacos.parser.NacosDataParserHandler.parseNacosData(NacosDataParserHandler.java:45)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:98)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:142)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.quantization.auth.AuthServerApplication.main(AuthServerApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:51)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:52)
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.io.InputStreamReader.read(Unknown Source)
+	at org.yaml.snakeyaml.reader.UnicodeReader.read(UnicodeReader.java:125)
+	at org.yaml.snakeyaml.reader.StreamReader.update(StreamReader.java:183)
+	... 41 common frames omitted
+2022-05-01 13:10:42,325 - Ignore the empty nacos configuration and get it based on dataId[auth-server.yaml] & group[DEFAULT_GROUP]
+2022-05-01 13:10:42,352 - Ignore the empty nacos configuration and get it based on dataId[auth-server-dev.yaml] & group[DEFAULT_GROUP]
+2022-05-01 13:10:42,353 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='auth-server-dev.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server.yaml,DEFAULT_GROUP'}, NacosPropertySource {name='auth-server,DEFAULT_GROUP'}]}
+2022-05-01 13:10:42,376 - The following profiles are active: dev
+2022-05-01 13:10:43,756 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-01 13:10:43,765 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-01 13:10:44,179 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-01 13:10:44,187 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-01 13:10:44,247 - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2022-05-01 13:10:44,416 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-01 13:10:44,830 - BeanFactory id=b8257379-cd65-3e4c-bc4a-90e80ae75b1d
+2022-05-01 13:10:45,219 - Bean 'redisConfig' of type [com.quantization.auth.config.RedisConfig$$EnhancerBySpringCGLIB$$78ac9457] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 13:10:45,230 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 13:10:45,615 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-01 13:10:46,106 - Tomcat initialized with port(s): 8080 (http)
+2022-05-01 13:10:46,129 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-01 13:10:46,131 - Starting service [Tomcat]
+2022-05-01 13:10:46,147 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-01 13:10:46,280 - Initializing Spring embedded WebApplicationContext
+2022-05-01 13:10:46,281 - Root WebApplicationContext: initialization completed in 3870 ms
+2022-05-01 13:10:47,242 - initializer namespace from System Property :null
+2022-05-01 13:10:47,244 - initializer namespace from System Environment :null
+2022-05-01 13:10:47,260 - initializer namespace from System Property :null
+2022-05-01 13:10:47,438 - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-05-01 13:10:47,506 - Stopping service [Tomcat]
+2022-05-01 13:10:47,598 - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2022-05-01 13:10:47,599 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.client.listener] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.poll(Unknown Source)
+ com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:114)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2022-05-01 13:10:47,619 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2022-05-01 13:10:47,631 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+ java.net.DualStackPlainDatagramSocketImpl.receive0(Unknown Source)
+ java.net.AbstractPlainDatagramSocketImpl.receive(Unknown Source)
+ java.net.DatagramSocket.receive(Unknown Source)
+ com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:73)
+ java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+ java.util.concurrent.FutureTask.run(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2022-05-01 13:10:47,657 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-05-01 13:10:47,702 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-01 13:10:47,708 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
