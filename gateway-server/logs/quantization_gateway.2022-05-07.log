@@ -1,0 +1,56 @@
+2022-05-07 15:57:30,601 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 15:57:32,235 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 15:57:32,312 - limitTime:5.0
+2022-05-07 15:57:33,186 - Ignore the empty nacos configuration and get it based on dataId[gateway] & group[dev]
+2022-05-07 15:57:33,211 - Ignore the empty nacos configuration and get it based on dataId[gateway.yaml] & group[dev]
+2022-05-07 15:57:33,236 - Ignore the empty nacos configuration and get it based on dataId[gateway-dev.yaml] & group[dev]
+2022-05-07 15:57:33,238 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-dev.yaml,dev'}, NacosPropertySource {name='gateway.yaml,dev'}, NacosPropertySource {name='gateway,dev'}]}
+2022-05-07 15:57:33,262 - The following profiles are active: dev
+2022-05-07 15:57:36,047 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 15:57:36,064 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 15:57:36,674 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 15:57:36,683 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 15:57:36,766 - Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2022-05-07 15:57:36,994 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 15:57:37,048 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 15:57:37,510 - BeanFactory id=f656d854-b788-302d-805a-c266577d3474
+2022-05-07 15:57:38,887 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 15:57:39,868 - Tomcat initialized with port(s): 8080 (http)
+2022-05-07 15:57:39,905 - Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-07 15:57:39,908 - Starting service [Tomcat]
+2022-05-07 15:57:39,909 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 15:57:40,258 - Initializing Spring embedded WebApplicationContext
+2022-05-07 15:57:40,258 - Root WebApplicationContext: initialization completed in 6876 ms
+2022-05-07 15:57:40,528 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:57:40,530 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:57:40,583 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@488f3dd1
+2022-05-07 15:57:43,176 - initializer namespace from System Property :null
+2022-05-07 15:57:43,179 - initializer namespace from System Environment :null
+2022-05-07 15:57:43,182 - initializer namespace from System Property :null
+2022-05-07 15:57:45,094 - 
+
+Using generated security password: c8bb9431-740e-46e5-adf7-f7e2aa79156d
+
+2022-05-07 15:57:45,882 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72b40f87, org.springframework.security.web.context.SecurityContextPersistenceFilter@7103745, org.springframework.security.web.header.HeaderWriterFilter@68fc9167, org.springframework.security.web.authentication.logout.LogoutFilter@72eed547, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@11d2714a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25de8898, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27bb4dc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2475fba3, org.springframework.security.web.session.SessionManagementFilter@6546371, org.springframework.security.web.access.ExceptionTranslationFilter@61ab6521, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@656ec00d]
+2022-05-07 15:57:45,930 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30fbc23, org.springframework.security.web.context.SecurityContextPersistenceFilter@4586a8aa, org.springframework.security.web.header.HeaderWriterFilter@1d8e9d3e, org.springframework.security.web.csrf.CsrfFilter@2084e65a, org.springframework.security.web.authentication.logout.LogoutFilter@782ac148, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3dc82e6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54463380, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d74cbbd, org.springframework.security.web.session.SessionManagementFilter@360d41d0, org.springframework.security.web.access.ExceptionTranslationFilter@7b7068d8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23c7cb18]
+2022-05-07 15:57:46,022 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 15:57:46,024 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 15:57:46,511 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 15:57:46,880 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 15:57:50,663 - Starting filter initializer
+2022-05-07 15:57:50,685 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 15:57:51,021 - Starting ProtocolHandler ["http-nio-8080"]
+2022-05-07 15:57:51,110 - Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-07 15:57:52,198 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8080,"scheduled":false,"serviceName":"dev@@gateway","stopped":false,"weight":1} to beat map.
+2022-05-07 15:57:52,240 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8080,"weight":1}
+2022-05-07 15:57:52,267 - nacos registry, dev gateway 192.168.1.10:8080 register finished
+2022-05-07 15:57:52,286 - Started GatewayApplication in 24.791 seconds (JVM running for 26.309)
+2022-05-07 15:57:52,381 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 15:57:52,384 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-dev.yaml, group=dev, cnt=1
+2022-05-07 15:57:52,386 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 15:57:52,387 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway, group=dev, cnt=1
+2022-05-07 15:57:52,389 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 15:57:52,390 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway.yaml, group=dev, cnt=1
+2022-05-07 15:57:52,407 - get changedGroupKeys:[]
+2022-05-07 15:58:22,200 - get changedGroupKeys:[]
+2022-05-07 15:58:51,713 - get changedGroupKeys:[]

@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: auth-server
+  application: 
+    name: gateway-server
   profiles:
     active: dev
   cloud:
@@ -14,4 +14,3 @@ spring:
         server-addr: 101.43.110.173:31370
         group: dev
         namespace: 424fbe21-5ac6-40c7-8b72-95cecec8daa6
-        

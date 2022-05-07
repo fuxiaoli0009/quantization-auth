@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>auth-server</module>
-    <module>quantization_gateway</module>
+    <module>gateway-server</module>
   </modules>
   <parent>
         <groupId>org.springframework.boot</groupId>

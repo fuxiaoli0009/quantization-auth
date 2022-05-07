@@ -1,0 +1,1404 @@
+2022-05-07 15:59:54,693 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 15:59:56,086 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 15:59:56,176 - limitTime:5.0
+2022-05-07 15:59:57,017 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 15:59:57,062 - isMultiInstance:false
+2022-05-07 15:59:57,102 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 15:59:57,111 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 15:59:58,165 - The following profiles are active: dev
+2022-05-07 15:59:59,793 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 15:59:59,815 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:00:00,425 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:00:00,434 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:00:00,521 - Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2022-05-07 16:00:00,829 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:00:00,886 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:00:01,364 - BeanFactory id=f656d854-b788-302d-805a-c266577d3474
+2022-05-07 16:00:02,691 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:00:03,779 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:00:03,826 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:00:03,832 - Starting service [Tomcat]
+2022-05-07 16:00:03,835 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:00:04,275 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:00:04,277 - Root WebApplicationContext: initialization completed in 6069 ms
+2022-05-07 16:00:04,607 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:00:04,609 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:00:04,649 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@79476a4e
+2022-05-07 16:00:07,495 - initializer namespace from System Property :null
+2022-05-07 16:00:07,498 - initializer namespace from System Environment :null
+2022-05-07 16:00:07,501 - initializer namespace from System Property :null
+2022-05-07 16:00:09,822 - 
+
+Using generated security password: 4f607cb5-5eb6-45fd-a5e2-bf125956f313
+
+2022-05-07 16:00:10,797 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7608a838, org.springframework.security.web.context.SecurityContextPersistenceFilter@56e5c8fb, org.springframework.security.web.header.HeaderWriterFilter@5c9e8a67, org.springframework.security.web.authentication.logout.LogoutFilter@baa227e, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@49cb5030, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9e33a6a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18d30e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75839695, org.springframework.security.web.session.SessionManagementFilter@3b8507df, org.springframework.security.web.access.ExceptionTranslationFilter@3a588b5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cd7d5e1]
+2022-05-07 16:00:10,854 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b47b7f5, org.springframework.security.web.context.SecurityContextPersistenceFilter@45e7bb79, org.springframework.security.web.header.HeaderWriterFilter@9f9146d, org.springframework.security.web.csrf.CsrfFilter@6f867b0c, org.springframework.security.web.authentication.logout.LogoutFilter@75527e36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@605c7a9e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21c75084, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@506aa618, org.springframework.security.web.session.SessionManagementFilter@2ef041bb, org.springframework.security.web.access.ExceptionTranslationFilter@1426370c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e050be1]
+2022-05-07 16:00:10,961 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:00:10,965 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:00:11,998 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:00:12,677 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:00:18,225 - Starting filter initializer
+2022-05-07 16:00:18,277 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:00:18,847 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:00:18,952 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:00:19,805 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:00:19,854 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:00:19,891 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:00:19,916 - Started GatewayApplication in 28.294 seconds (JVM running for 29.508)
+2022-05-07 16:00:20,023 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:00:20,025 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:00:20,028 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:00:20,029 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:00:20,030 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:00:20,031 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:00:20,052 - get changedGroupKeys:[]
+2022-05-07 16:00:49,751 - get changedGroupKeys:[]
+2022-05-07 16:01:19,264 - get changedGroupKeys:[]
+2022-05-07 16:01:30,350 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:01:31,814 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:01:31,941 - limitTime:5.0
+2022-05-07 16:01:32,880 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:01:32,901 - isMultiInstance:false
+2022-05-07 16:01:32,938 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:01:32,940 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:01:33,910 - The following profiles are active: dev
+2022-05-07 16:01:35,905 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:01:35,922 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:01:36,527 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:01:36,535 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:01:36,616 - Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2022-05-07 16:01:36,799 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:01:36,838 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:01:37,398 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:01:38,936 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:01:39,981 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:01:40,025 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:01:40,028 - Starting service [Tomcat]
+2022-05-07 16:01:40,030 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:01:41,143 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:01:41,145 - Root WebApplicationContext: initialization completed in 7190 ms
+2022-05-07 16:01:41,607 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:01:41,609 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:01:41,689 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@47acd13b
+2022-05-07 16:01:45,684 - initializer namespace from System Property :null
+2022-05-07 16:01:45,687 - initializer namespace from System Environment :null
+2022-05-07 16:01:45,692 - initializer namespace from System Property :null
+2022-05-07 16:01:48,898 - 
+
+Using generated security password: 0c28596b-a3db-4f49-a8d6-fd527107c2f6
+
+2022-05-07 16:01:49,960 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17b6ad97, org.springframework.security.web.context.SecurityContextPersistenceFilter@734fbae3, org.springframework.security.web.header.HeaderWriterFilter@54329480, org.springframework.security.web.authentication.logout.LogoutFilter@5ed25612, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@e2b3026, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a6a6a69, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16ac4d3d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44fb6ebd, org.springframework.security.web.session.SessionManagementFilter@6f07d414, org.springframework.security.web.access.ExceptionTranslationFilter@6c6c2a73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@667797f]
+2022-05-07 16:01:50,037 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@65e4cb84, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ba3f40d, org.springframework.security.web.header.HeaderWriterFilter@7534785a, org.springframework.security.web.csrf.CsrfFilter@236861da, org.springframework.security.web.authentication.logout.LogoutFilter@b5312df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@108b121f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46ab4efc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b44bfb8, org.springframework.security.web.session.SessionManagementFilter@46b5f061, org.springframework.security.web.access.ExceptionTranslationFilter@3513d214, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a6fb62f]
+2022-05-07 16:01:50,173 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:01:50,175 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:01:51,427 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:01:52,006 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:01:57,624 - Starting filter initializer
+2022-05-07 16:01:57,659 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:01:58,207 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:01:58,390 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:01:59,781 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:01:59,837 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:01:59,880 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:01:59,905 - Started GatewayServerApplication in 32.358 seconds (JVM running for 33.496)
+2022-05-07 16:02:00,063 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:02:00,091 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:02:00,099 - get changedGroupKeys:[]
+2022-05-07 16:02:00,104 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:02:00,104 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:02:00,106 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:02:00,108 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:02:29,808 - get changedGroupKeys:[]
+2022-05-07 16:02:29,832 - get changedGroupKeys:[]
+2022-05-07 16:02:57,000 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:02:57,002 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:02:57,022 - Completed initialization in 19 ms
+2022-05-07 16:02:57,166 - 执行过滤器
+2022-05-07 16:02:57,590 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:02:57,655 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:02:57,680 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:02:57,759 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:02:57,773 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:02:57,803 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:02:57,809 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@5e86add1
+2022-05-07 16:02:58,698 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:02:58,982 - 执行过滤器
+2022-05-07 16:02:59,523 - get changedGroupKeys:[]
+2022-05-07 16:03:03,995 - 执行过滤器
+2022-05-07 16:03:05,032 - Error during filtering
+com.netflix.zuul.exception.ZuulException: 
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.error(FilterProcessor.java:105)
+	at com.netflix.zuul.ZuulRunner.error(ZuulRunner.java:112)
+	at com.netflix.zuul.http.ZuulServlet.error(ZuulServlet.java:145)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:83)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:166)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:03:29,037 - get changedGroupKeys:[]
+2022-05-07 16:03:58,550 - get changedGroupKeys:[]
+2022-05-07 16:04:28,064 - get changedGroupKeys:[]
+2022-05-07 16:04:57,581 - get changedGroupKeys:[]
+2022-05-07 16:05:27,098 - get changedGroupKeys:[]
+2022-05-07 16:05:56,612 - get changedGroupKeys:[]
+2022-05-07 16:06:26,128 - get changedGroupKeys:[]
+2022-05-07 16:06:51,201 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:06:54,285 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:06:54,636 - limitTime:5.0
+2022-05-07 16:06:55,818 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:06:55,845 - isMultiInstance:false
+2022-05-07 16:06:55,924 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:06:55,926 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:06:56,445 - The following profiles are active: dev
+2022-05-07 16:07:00,936 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:07:00,952 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:07:02,559 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:07:02,583 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:07:02,753 - Finished Spring Data repository scanning in 69ms. Found 0 Redis repository interfaces.
+2022-05-07 16:07:03,202 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:07:03,346 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:07:04,805 - BeanFactory id=a95cd987-1c11-3d11-a161-1e43478d8c39
+2022-05-07 16:07:07,581 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:07:09,398 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:07:09,465 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:07:09,470 - Starting service [Tomcat]
+2022-05-07 16:07:09,472 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:07:10,502 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:07:10,504 - Root WebApplicationContext: initialization completed in 13990 ms
+2022-05-07 16:07:11,319 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:07:11,327 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:07:11,429 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@423a0e1d
+2022-05-07 16:07:11,613 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration': Unsatisfied dependency expressed through field 'zuulProperties'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'zuul-org.springframework.cloud.netflix.zuul.filters.ZuulProperties': Could not bind properties to 'ZuulProperties' : prefix=zuul, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute
+2022-05-07 16:07:12,103 - Stopping service [Tomcat]
+2022-05-07 16:07:12,223 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-05-07 16:07:12,489 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 16:07:12,499 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute:
+
+    Reason: No converter found capable of converting from type [java.lang.Integer] to type [org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute]
+
+Action:
+
+Update your application's configuration
+
+2022-05-07 16:08:52,791 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:08:54,297 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:08:54,437 - limitTime:5.0
+2022-05-07 16:08:55,195 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:08:55,215 - isMultiInstance:false
+2022-05-07 16:08:55,261 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:08:55,263 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:08:56,357 - The following profiles are active: dev
+2022-05-07 16:08:58,251 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:08:58,262 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:08:58,850 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:08:58,858 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:08:58,926 - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2022-05-07 16:08:59,118 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:08:59,163 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:08:59,568 - BeanFactory id=a95cd987-1c11-3d11-a161-1e43478d8c39
+2022-05-07 16:09:00,667 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:09:01,347 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:09:01,379 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:09:01,381 - Starting service [Tomcat]
+2022-05-07 16:09:01,383 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:09:01,800 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:09:01,801 - Root WebApplicationContext: initialization completed in 5391 ms
+2022-05-07 16:09:02,084 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:09:02,085 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:09:02,122 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a6c7f42
+2022-05-07 16:09:02,248 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration': Unsatisfied dependency expressed through field 'zuulProperties'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'zuul-org.springframework.cloud.netflix.zuul.filters.ZuulProperties': Could not bind properties to 'ZuulProperties' : prefix=zuul, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute
+2022-05-07 16:09:02,330 - Stopping service [Tomcat]
+2022-05-07 16:09:02,348 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-05-07 16:09:02,392 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 16:09:02,400 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute:
+
+    Reason: No converter found capable of converting from type [java.lang.Integer] to type [org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute]
+
+Action:
+
+Update your application's configuration
+
+2022-05-07 16:10:00,800 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:10:02,232 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:10:02,347 - limitTime:5.0
+2022-05-07 16:10:03,129 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:10:03,147 - isMultiInstance:false
+2022-05-07 16:10:03,181 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:10:03,183 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:10:04,296 - The following profiles are active: dev
+2022-05-07 16:10:06,393 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:10:06,409 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:10:06,965 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:10:06,971 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:10:07,029 - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2022-05-07 16:10:07,242 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:10:07,286 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:10:07,768 - BeanFactory id=a95cd987-1c11-3d11-a161-1e43478d8c39
+2022-05-07 16:10:08,963 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:10:09,661 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:10:09,704 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:10:09,706 - Starting service [Tomcat]
+2022-05-07 16:10:09,708 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:10:10,121 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:10:10,122 - Root WebApplicationContext: initialization completed in 5779 ms
+2022-05-07 16:10:10,401 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:10:10,402 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:10:10,425 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@9b23822
+2022-05-07 16:10:10,528 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration': Unsatisfied dependency expressed through field 'zuulProperties'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'zuul-org.springframework.cloud.netflix.zuul.filters.ZuulProperties': Could not bind properties to 'ZuulProperties' : prefix=zuul, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute
+2022-05-07 16:10:10,650 - Stopping service [Tomcat]
+2022-05-07 16:10:10,665 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2022-05-07 16:10:10,698 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 16:10:10,704 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'zuul.routes.connect-timeout-millis' to org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute:
+
+    Reason: No converter found capable of converting from type [java.lang.Integer] to type [org.springframework.cloud.netflix.zuul.filters.ZuulProperties$ZuulRoute]
+
+Action:
+
+Update your application's configuration
+
+2022-05-07 16:11:02,221 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:11:03,733 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:11:03,822 - limitTime:5.0
+2022-05-07 16:11:04,606 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:11:04,623 - isMultiInstance:false
+2022-05-07 16:11:04,664 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:11:04,665 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:11:05,849 - The following profiles are active: dev
+2022-05-07 16:11:07,586 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:11:07,598 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:11:08,096 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:11:08,105 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:11:08,173 - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2022-05-07 16:11:08,360 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:11:08,403 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:11:08,817 - BeanFactory id=a95cd987-1c11-3d11-a161-1e43478d8c39
+2022-05-07 16:11:09,959 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:11:10,769 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:11:10,805 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:11:10,807 - Starting service [Tomcat]
+2022-05-07 16:11:10,809 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:11:11,153 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:11:11,153 - Root WebApplicationContext: initialization completed in 5263 ms
+2022-05-07 16:11:11,405 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:11:11,406 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:11:11,434 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3becc950
+2022-05-07 16:11:13,739 - initializer namespace from System Property :null
+2022-05-07 16:11:13,741 - initializer namespace from System Environment :null
+2022-05-07 16:11:13,744 - initializer namespace from System Property :null
+2022-05-07 16:11:15,646 - 
+
+Using generated security password: c758edc8-0215-4d5a-8f8d-e7854d083422
+
+2022-05-07 16:11:16,351 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1552da16, org.springframework.security.web.context.SecurityContextPersistenceFilter@384472bf, org.springframework.security.web.header.HeaderWriterFilter@45f9d394, org.springframework.security.web.authentication.logout.LogoutFilter@5ed31735, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@26d40c77, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b8507df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7493d937, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78318ac2, org.springframework.security.web.session.SessionManagementFilter@59e082f8, org.springframework.security.web.access.ExceptionTranslationFilter@6ba6557e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@762405bf]
+2022-05-07 16:11:16,388 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a9a8ec3, org.springframework.security.web.context.SecurityContextPersistenceFilter@54be6213, org.springframework.security.web.header.HeaderWriterFilter@6f867b0c, org.springframework.security.web.csrf.CsrfFilter@141aba65, org.springframework.security.web.authentication.logout.LogoutFilter@2ef041bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48a46b0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1426370c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0114c0, org.springframework.security.web.session.SessionManagementFilter@4b5ad306, org.springframework.security.web.access.ExceptionTranslationFilter@6b2ef50e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@376af784]
+2022-05-07 16:11:16,465 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:11:16,467 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:11:16,982 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:11:17,360 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:11:20,882 - Starting filter initializer
+2022-05-07 16:11:20,907 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:11:21,320 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:11:21,402 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:11:22,349 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:11:22,391 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:11:22,418 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:11:22,438 - Started GatewayServerApplication in 22.919 seconds (JVM running for 24.055)
+2022-05-07 16:11:22,521 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:11:22,525 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:11:22,529 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:11:22,530 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:11:22,532 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:11:22,533 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:11:22,542 - get changedGroupKeys:[]
+2022-05-07 16:11:22,561 - get changedGroupKeys:[]
+2022-05-07 16:11:50,291 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:11:50,291 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:11:50,312 - Completed initialization in 20 ms
+2022-05-07 16:11:50,530 - 执行过滤器
+2022-05-07 16:11:51,277 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:11:51,379 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:11:51,418 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:11:51,519 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:11:51,533 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:11:51,579 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:11:51,587 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@69dabfc9
+2022-05-07 16:11:52,288 - get changedGroupKeys:[]
+2022-05-07 16:11:52,443 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:11:52,898 - 执行过滤器
+2022-05-07 16:12:00,705 - 执行过滤器
+2022-05-07 16:12:01,763 - Error during filtering
+com.netflix.zuul.exception.ZuulException: 
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.error(FilterProcessor.java:105)
+	at com.netflix.zuul.ZuulRunner.error(ZuulRunner.java:112)
+	at com.netflix.zuul.http.ZuulServlet.error(ZuulServlet.java:145)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:83)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:166)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:12:21,807 - get changedGroupKeys:[]
+2022-05-07 16:12:51,323 - get changedGroupKeys:[]
+2022-05-07 16:13:20,836 - get changedGroupKeys:[]
+2022-05-07 16:13:50,353 - get changedGroupKeys:[]
+2022-05-07 16:14:19,870 - get changedGroupKeys:[]
+2022-05-07 16:14:49,438 - get changedGroupKeys:[]
+2022-05-07 16:14:58,220 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:14:59,658 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:14:59,736 - limitTime:5.0
+2022-05-07 16:15:00,500 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:15:00,518 - isMultiInstance:false
+2022-05-07 16:15:00,574 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:15:00,576 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:15:01,731 - The following profiles are active: dev
+2022-05-07 16:15:03,471 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:15:03,492 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:15:04,022 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:15:04,031 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:15:04,110 - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2022-05-07 16:15:04,305 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:15:04,346 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:15:04,788 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:15:06,046 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:15:06,677 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:15:06,707 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:15:06,711 - Starting service [Tomcat]
+2022-05-07 16:15:06,714 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:15:07,058 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:15:07,059 - Root WebApplicationContext: initialization completed in 5289 ms
+2022-05-07 16:15:07,343 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:15:07,344 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:15:07,372 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@47272cd3
+2022-05-07 16:15:09,776 - initializer namespace from System Property :null
+2022-05-07 16:15:09,780 - initializer namespace from System Environment :null
+2022-05-07 16:15:09,784 - initializer namespace from System Property :null
+2022-05-07 16:15:11,519 - 
+
+Using generated security password: 24256227-5ca8-4c59-ae43-026449f6101a
+
+2022-05-07 16:15:12,279 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32dcfeea, org.springframework.security.web.context.SecurityContextPersistenceFilter@68e47e7, org.springframework.security.web.header.HeaderWriterFilter@6c9bf3b5, org.springframework.security.web.authentication.logout.LogoutFilter@5dc7841c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@53f7a906, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16ac4d3d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c2d63f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@738a815c, org.springframework.security.web.session.SessionManagementFilter@53e93fb7, org.springframework.security.web.access.ExceptionTranslationFilter@3b770d07, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4536a715]
+2022-05-07 16:15:12,313 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b55f5b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@547aaa32, org.springframework.security.web.header.HeaderWriterFilter@4300e240, org.springframework.security.web.csrf.CsrfFilter@3ba3f40d, org.springframework.security.web.authentication.logout.LogoutFilter@5908e6d6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@472c9f88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37a67cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aa6bbad, org.springframework.security.web.session.SessionManagementFilter@5f409872, org.springframework.security.web.access.ExceptionTranslationFilter@b5312df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3356ff58]
+2022-05-07 16:15:12,383 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:15:12,384 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:15:12,792 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:15:13,092 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:15:16,279 - Starting filter initializer
+2022-05-07 16:15:16,310 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:15:16,699 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:15:16,763 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:15:17,658 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:15:17,700 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:15:17,732 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:15:17,752 - Started GatewayServerApplication in 22.266 seconds (JVM running for 23.525)
+2022-05-07 16:15:17,874 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:15:17,879 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:15:17,882 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:15:17,883 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:15:17,885 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:15:17,885 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:15:17,908 - get changedGroupKeys:[]
+2022-05-07 16:15:36,977 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:15:36,979 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:15:37,002 - Completed initialization in 23 ms
+2022-05-07 16:15:37,204 - 执行过滤器
+2022-05-07 16:15:37,932 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:15:38,006 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:15:38,122 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:15:38,211 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:15:38,229 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:15:38,301 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:15:38,316 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4109b4c
+2022-05-07 16:15:39,143 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:15:39,238 - 执行过滤器
+2022-05-07 16:15:47,604 - get changedGroupKeys:[]
+2022-05-07 16:16:03,434 - 执行过滤器
+2022-05-07 16:16:03,670 - 执行过滤器
+2022-05-07 16:16:17,117 - get changedGroupKeys:[]
+2022-05-07 16:16:46,686 - get changedGroupKeys:[]
+2022-05-07 16:17:16,206 - get changedGroupKeys:[]
+2022-05-07 16:17:30,665 - 执行过滤器
+2022-05-07 16:17:31,074 - 执行过滤器
+2022-05-07 16:17:43,252 - 执行过滤器
+2022-05-07 16:17:45,718 - get changedGroupKeys:[]
+2022-05-07 16:17:45,744 - 执行过滤器
+2022-05-07 16:18:15,243 - get changedGroupKeys:[]
+2022-05-07 16:18:44,757 - get changedGroupKeys:[]
+2022-05-07 16:19:14,268 - get changedGroupKeys:[]
+2022-05-07 16:19:43,780 - get changedGroupKeys:[]
+2022-05-07 16:19:45,275 - 执行过滤器
+2022-05-07 16:20:05,739 - 执行过滤器
+2022-05-07 16:20:05,741 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@dd864851: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:20:05,906 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:20:05,917 - Client: quantization-front instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-front,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:20:05,926 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:20:05,941 - new ips(1) service: dev@@quantization-front -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39370#DEFAULT#dev@@quantization-front","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39370,"serviceName":"dev@@quantization-front","weight":1}]
+2022-05-07 16:20:05,946 - current ips:(1) service: dev@@quantization-front -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39370#DEFAULT#dev@@quantization-front","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39370,"serviceName":"dev@@quantization-front","weight":1}]
+2022-05-07 16:20:05,952 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:20:05,957 - DynamicServerListLoadBalancer for client quantization-front initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-front,current list of Servers=[192.168.1.10:39370],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39370;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4787ec5
+2022-05-07 16:20:06,928 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:20:09,391 - 执行过滤器
+2022-05-07 16:20:09,392 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@dd864851: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:20:10,479 - 执行过滤器
+2022-05-07 16:20:10,481 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@dd864851: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:20:11,566 - 执行过滤器
+2022-05-07 16:20:11,568 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@dd864851: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:20:12,910 - 执行过滤器
+2022-05-07 16:20:12,912 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@dd864851: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:20:13,292 - get changedGroupKeys:[]
+2022-05-07 16:20:42,806 - get changedGroupKeys:[]
+2022-05-07 16:21:12,414 - get changedGroupKeys:[]
+2022-05-07 16:21:40,797 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [polling-resp] config changed. dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:21:40,798 - get changedGroupKeys:[gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6]
+2022-05-07 16:21:40,820 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [data-received] dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, md5=24cdfd7b0723bfc7117f3f62b0dd1c77, content=server:
+  port: 38370
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  application:
+    nam..., type=yaml
+2022-05-07 16:21:40,823 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-context] dataId=gateway-server.yaml, group=dev, md5=24cdfd7b0723bfc7117f3f62b0dd1c77
+2022-05-07 16:21:42,064 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:21:43,165 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:21:43,198 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:21:43,199 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:21:43,233 - The following profiles are active: dev
+2022-05-07 16:21:43,263 - Started application in 2.431 seconds (JVM running for 409.037)
+2022-05-07 16:21:43,598 - Refresh keys changed: [zuul.sensitive-headers]
+2022-05-07 16:21:43,599 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-ok] dataId=gateway-server.yaml, group=dev, md5=24cdfd7b0723bfc7117f3f62b0dd1c77, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@1b52c2ed 
+2022-05-07 16:21:43,600 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-listener] time cost=2777ms in ClientWorker, dataId=gateway-server.yaml, group=dev, md5=24cdfd7b0723bfc7117f3f62b0dd1c77, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@1b52c2ed 
+2022-05-07 16:22:00,546 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:22:01,987 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:22:02,089 - limitTime:5.0
+2022-05-07 16:22:02,929 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:22:02,959 - isMultiInstance:false
+2022-05-07 16:22:03,060 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:22:03,062 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:22:04,288 - The following profiles are active: dev
+2022-05-07 16:22:06,038 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:06,055 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:06,603 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:22:06,612 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:22:06,683 - Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2022-05-07 16:22:06,876 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:06,922 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:07,457 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:22:08,447 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:22:09,136 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:22:09,174 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:22:09,177 - Starting service [Tomcat]
+2022-05-07 16:22:09,178 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:22:09,621 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:22:09,623 - Root WebApplicationContext: initialization completed in 5295 ms
+2022-05-07 16:22:09,950 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:22:09,951 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:22:09,984 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3f63a513
+2022-05-07 16:22:12,565 - initializer namespace from System Property :null
+2022-05-07 16:22:12,568 - initializer namespace from System Environment :null
+2022-05-07 16:22:12,570 - initializer namespace from System Property :null
+2022-05-07 16:22:13,112 - get changedGroupKeys:[]
+2022-05-07 16:22:14,701 - 
+
+Using generated security password: c396a885-aa18-4e3d-8cd5-675397042bab
+
+2022-05-07 16:22:15,432 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@667797f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c6c2a73, org.springframework.security.web.header.HeaderWriterFilter@3d0352, org.springframework.security.web.authentication.logout.LogoutFilter@45f9d394, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@349f0ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36b53f08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1fcaea93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@184751f3, org.springframework.security.web.session.SessionManagementFilter@639cb788, org.springframework.security.web.access.ExceptionTranslationFilter@18026052, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64fdcf99]
+2022-05-07 16:22:15,468 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ba3f40d, org.springframework.security.web.context.SecurityContextPersistenceFilter@11abd6c, org.springframework.security.web.header.HeaderWriterFilter@78318ac2, org.springframework.security.web.csrf.CsrfFilter@4228f269, org.springframework.security.web.authentication.logout.LogoutFilter@21a6a494, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29b5533, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7608a838, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@108b121f, org.springframework.security.web.session.SessionManagementFilter@77ce88c4, org.springframework.security.web.access.ExceptionTranslationFilter@1552da16, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@46b5f061]
+2022-05-07 16:22:15,560 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:22:15,561 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:22:16,073 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:22:16,510 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:22:19,778 - Starting filter initializer
+2022-05-07 16:22:19,815 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:22:20,375 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:22:20,411 - Pausing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:22:20,412 - Stopping service [Tomcat]
+2022-05-07 16:22:20,426 - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,428 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.client.listener] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:118)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,430 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,431 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,433 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,435 - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+ java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+ java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+ java.net.DatagramSocket.receive(DatagramSocket.java:812)
+ com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:73)
+ java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+ java.util.concurrent.FutureTask.run(FutureTask.java:266)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,437 - The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:289)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,438 - The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:22:20,442 - Stopping ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:22:20,444 - Destroying ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:22:20,454 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-07 16:22:20,461 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:22:20,464 - Stopping filter initializer
+2022-05-07 16:22:20,470 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:22:20,637 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 38370 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 38370 or configure this application to listen on another port.
+
+2022-05-07 16:22:50,996 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:22:52,535 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:22:52,671 - limitTime:5.0
+2022-05-07 16:22:53,698 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:22:53,738 - isMultiInstance:false
+2022-05-07 16:22:53,807 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:22:53,808 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:22:54,655 - The following profiles are active: dev
+2022-05-07 16:22:57,462 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:57,482 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:58,332 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:22:58,343 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:22:58,412 - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2022-05-07 16:22:58,676 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:58,720 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:22:59,315 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:23:01,309 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:23:02,663 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:23:02,716 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:23:02,718 - Starting service [Tomcat]
+2022-05-07 16:23:02,719 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:23:03,405 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:23:03,407 - Root WebApplicationContext: initialization completed in 8708 ms
+2022-05-07 16:23:03,791 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:23:03,792 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:23:03,849 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@327e5be5
+2022-05-07 16:23:06,426 - initializer namespace from System Property :null
+2022-05-07 16:23:06,430 - initializer namespace from System Environment :null
+2022-05-07 16:23:06,433 - initializer namespace from System Property :null
+2022-05-07 16:23:08,491 - 
+
+Using generated security password: d2c00dec-c8d8-45a2-9f68-f5029ae43fdb
+
+2022-05-07 16:23:09,293 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54463380, org.springframework.security.web.context.SecurityContextPersistenceFilter@ba4f370, org.springframework.security.web.header.HeaderWriterFilter@7babed9e, org.springframework.security.web.authentication.logout.LogoutFilter@11e834ad, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3a861417, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7af0d91b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cecc15a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@819fb19, org.springframework.security.web.session.SessionManagementFilter@c758a2d, org.springframework.security.web.access.ExceptionTranslationFilter@2a1e57c6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53f7a906]
+2022-05-07 16:23:09,332 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4522d793, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f8c3646, org.springframework.security.web.header.HeaderWriterFilter@ce561cc, org.springframework.security.web.csrf.CsrfFilter@fabef2e, org.springframework.security.web.authentication.logout.LogoutFilter@184751f3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14b95942, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3375b118, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64dfb31d, org.springframework.security.web.session.SessionManagementFilter@56ec6960, org.springframework.security.web.access.ExceptionTranslationFilter@286866cb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35dcd032]
+2022-05-07 16:23:09,407 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:23:09,408 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:23:09,962 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:23:10,318 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:23:13,221 - Starting filter initializer
+2022-05-07 16:23:13,241 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:23:13,563 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:23:13,643 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:23:14,627 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:23:14,673 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:23:14,704 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:23:14,725 - Started GatewayServerApplication in 27.241 seconds (JVM running for 28.849)
+2022-05-07 16:23:14,823 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:23:14,826 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:23:14,829 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:23:14,830 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:23:14,831 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:23:14,833 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:23:14,852 - get changedGroupKeys:[]
+2022-05-07 16:23:44,550 - get changedGroupKeys:[]
+2022-05-07 16:24:14,065 - get changedGroupKeys:[]
+2022-05-07 16:24:43,580 - get changedGroupKeys:[]
+2022-05-07 16:24:57,332 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:24:57,334 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:24:57,353 - Completed initialization in 19 ms
+2022-05-07 16:24:57,490 - 执行过滤器
+2022-05-07 16:24:58,072 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:24:58,130 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:24:58,155 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:24:58,233 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:24:58,249 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:24:58,287 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:24:58,296 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3f9f0088
+2022-05-07 16:24:59,178 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:24:59,262 - 执行过滤器
+2022-05-07 16:25:12,810 - 执行过滤器
+2022-05-07 16:25:12,855 - 执行过滤器
+2022-05-07 16:25:13,096 - get changedGroupKeys:[]
+2022-05-07 16:25:42,611 - get changedGroupKeys:[]
+2022-05-07 16:26:12,123 - get changedGroupKeys:[]
+2022-05-07 16:26:35,123 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [polling-resp] config changed. dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:26:35,125 - get changedGroupKeys:[gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6]
+2022-05-07 16:26:35,157 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [data-received] dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, md5=e7cfa5c7417ae6ae4892e396f30f0d98, content=server:
+  port: 38370
+zuul:
+  sensitive-headers: null
+  add-host-header: true 
+  host:
+    connect-t..., type=yaml
+2022-05-07 16:26:35,160 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-context] dataId=gateway-server.yaml, group=dev, md5=e7cfa5c7417ae6ae4892e396f30f0d98
+2022-05-07 16:26:36,400 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:26:37,442 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:26:37,474 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:26:37,475 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:26:37,504 - The following profiles are active: dev
+2022-05-07 16:26:37,531 - Started application in 2.356 seconds (JVM running for 231.655)
+2022-05-07 16:26:37,770 - Refresh keys changed: []
+2022-05-07 16:26:37,772 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-ok] dataId=gateway-server.yaml, group=dev, md5=e7cfa5c7417ae6ae4892e396f30f0d98, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@1d03b247 
+2022-05-07 16:26:37,772 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-listener] time cost=2612ms in ClientWorker, dataId=gateway-server.yaml, group=dev, md5=e7cfa5c7417ae6ae4892e396f30f0d98, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@1d03b247 
+2022-05-07 16:27:06,756 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:27:08,286 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:27:08,383 - limitTime:5.0
+2022-05-07 16:27:09,194 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:27:09,215 - isMultiInstance:false
+2022-05-07 16:27:09,257 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:27:09,258 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:27:10,358 - The following profiles are active: dev
+2022-05-07 16:27:12,005 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:27:12,021 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:27:12,564 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:27:12,572 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:27:12,646 - Finished Spring Data repository scanning in 38ms. Found 0 Redis repository interfaces.
+2022-05-07 16:27:12,899 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:27:12,940 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:27:13,336 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:27:14,354 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:27:14,976 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:27:15,011 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:27:15,013 - Starting service [Tomcat]
+2022-05-07 16:27:15,014 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:27:15,335 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:27:15,336 - Root WebApplicationContext: initialization completed in 4929 ms
+2022-05-07 16:27:15,567 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:27:15,568 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:27:15,599 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7af443a3
+2022-05-07 16:27:17,837 - initializer namespace from System Property :null
+2022-05-07 16:27:17,840 - initializer namespace from System Environment :null
+2022-05-07 16:27:17,843 - initializer namespace from System Property :null
+2022-05-07 16:27:19,479 - 
+
+Using generated security password: 6b372c77-fe12-420c-be74-d1c23118fd25
+
+2022-05-07 16:27:20,038 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4afd65fd, org.springframework.security.web.context.SecurityContextPersistenceFilter@351e89fc, org.springframework.security.web.header.HeaderWriterFilter@41bb1f09, org.springframework.security.web.authentication.logout.LogoutFilter@61d2f267, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@286866cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15586843, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@749baa0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@141aba65, org.springframework.security.web.session.SessionManagementFilter@668a32a4, org.springframework.security.web.access.ExceptionTranslationFilter@4b07cad0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b5312df]
+2022-05-07 16:27:20,089 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a3ad8e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@e4ca109, org.springframework.security.web.header.HeaderWriterFilter@d504137, org.springframework.security.web.csrf.CsrfFilter@76a1146d, org.springframework.security.web.authentication.logout.LogoutFilter@60c96eb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15c16f19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a17dd6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a6d1ff3, org.springframework.security.web.session.SessionManagementFilter@8432469, org.springframework.security.web.access.ExceptionTranslationFilter@6dded900, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3db1ce78]
+2022-05-07 16:27:20,193 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:27:20,195 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:27:20,726 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:27:21,091 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:27:24,306 - Starting filter initializer
+2022-05-07 16:27:24,330 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:27:24,631 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:27:24,695 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:27:25,595 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:27:25,638 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:27:25,670 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:27:25,690 - Started GatewayServerApplication in 21.536 seconds (JVM running for 22.595)
+2022-05-07 16:27:25,757 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:27:25,760 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:27:25,763 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:27:25,764 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:27:25,766 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:27:25,766 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:27:25,785 - get changedGroupKeys:[]
+2022-05-07 16:27:55,484 - get changedGroupKeys:[]
+2022-05-07 16:28:24,999 - get changedGroupKeys:[]
+2022-05-07 16:28:54,515 - get changedGroupKeys:[]
+2022-05-07 16:29:20,040 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:29:20,041 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:29:20,067 - Completed initialization in 25 ms
+2022-05-07 16:29:20,288 - 执行过滤器
+2022-05-07 16:29:20,949 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:29:21,002 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:29:21,027 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:29:21,123 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:29:21,141 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:29:21,179 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:29:21,188 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@f0ca97b
+2022-05-07 16:29:22,051 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:29:22,184 - 执行过滤器
+2022-05-07 16:29:24,029 - get changedGroupKeys:[]
+2022-05-07 16:29:31,288 - 执行过滤器
+2022-05-07 16:29:31,326 - 执行过滤器
+2022-05-07 16:29:53,553 - get changedGroupKeys:[]
+2022-05-07 16:30:23,064 - get changedGroupKeys:[]
+2022-05-07 16:30:52,577 - get changedGroupKeys:[]
+2022-05-07 16:31:22,089 - get changedGroupKeys:[]
+2022-05-07 16:31:51,606 - get changedGroupKeys:[]
+2022-05-07 16:31:55,467 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [polling-resp] config changed. dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:31:55,468 - get changedGroupKeys:[gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6]
+2022-05-07 16:31:55,486 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [data-received] dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, md5=3facd12a48f1cc72a603f9f86b5e91b9, content=server:
+  port: 38370
+ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
+zuul:
+  add-host-header: ..., type=yaml
+2022-05-07 16:31:55,488 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-context] dataId=gateway-server.yaml, group=dev, md5=3facd12a48f1cc72a603f9f86b5e91b9
+2022-05-07 16:31:56,624 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:31:57,734 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:31:57,777 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:31:57,777 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:31:57,820 - The following profiles are active: dev
+2022-05-07 16:31:57,840 - Started application in 2.341 seconds (JVM running for 294.744)
+2022-05-07 16:31:58,160 - Refresh keys changed: [zuul.sensitive-headers]
+2022-05-07 16:31:58,161 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-ok] dataId=gateway-server.yaml, group=dev, md5=3facd12a48f1cc72a603f9f86b5e91b9, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@786eb3db 
+2022-05-07 16:31:58,161 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-listener] time cost=2673ms in ClientWorker, dataId=gateway-server.yaml, group=dev, md5=3facd12a48f1cc72a603f9f86b5e91b9, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@786eb3db 
+2022-05-07 16:32:22,976 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:32:24,422 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:32:24,524 - limitTime:5.0
+2022-05-07 16:32:25,325 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:32:25,344 - isMultiInstance:false
+2022-05-07 16:32:25,387 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:32:25,388 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:32:26,481 - The following profiles are active: dev
+2022-05-07 16:32:28,245 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:32:28,281 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:32:28,829 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:32:28,837 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:32:28,917 - Finished Spring Data repository scanning in 47ms. Found 0 Redis repository interfaces.
+2022-05-07 16:32:29,115 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:32:29,152 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:32:29,561 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:32:30,619 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:32:31,341 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:32:31,381 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:32:31,382 - Starting service [Tomcat]
+2022-05-07 16:32:31,384 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:32:31,749 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:32:31,750 - Root WebApplicationContext: initialization completed in 5224 ms
+2022-05-07 16:32:31,998 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:32:31,999 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:32:32,030 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@43ecfeb5
+2022-05-07 16:32:34,419 - initializer namespace from System Property :null
+2022-05-07 16:32:34,422 - initializer namespace from System Environment :null
+2022-05-07 16:32:34,425 - initializer namespace from System Property :null
+2022-05-07 16:32:36,098 - 
+
+Using generated security password: a353452c-af53-45bd-9a93-b65e587d0dd1
+
+2022-05-07 16:32:36,638 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4300e240, org.springframework.security.web.context.SecurityContextPersistenceFilter@507049f2, org.springframework.security.web.header.HeaderWriterFilter@4d67d5a4, org.springframework.security.web.authentication.logout.LogoutFilter@2084e65a, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@352f6727, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41bb1f09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a4c98d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f409872, org.springframework.security.web.session.SessionManagementFilter@2347b7af, org.springframework.security.web.access.ExceptionTranslationFilter@c497a55, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@794c5f5e]
+2022-05-07 16:32:36,666 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15c16f19, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d6713dd, org.springframework.security.web.header.HeaderWriterFilter@506aa618, org.springframework.security.web.csrf.CsrfFilter@6d0114c0, org.springframework.security.web.authentication.logout.LogoutFilter@adafe19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b39e79b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ee6dc82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a17dd6f, org.springframework.security.web.session.SessionManagementFilter@4b6b5352, org.springframework.security.web.access.ExceptionTranslationFilter@1b47b7f5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4ca109]
+2022-05-07 16:32:36,741 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:32:36,742 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:32:37,196 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:32:37,567 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:32:41,083 - Starting filter initializer
+2022-05-07 16:32:41,104 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:32:41,376 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:32:41,450 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:32:42,305 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:32:42,342 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:32:42,370 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:32:42,393 - Started GatewayServerApplication in 22.121 seconds (JVM running for 23.212)
+2022-05-07 16:32:42,489 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:32:42,493 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:32:42,496 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:32:42,498 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:32:42,500 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:32:42,502 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:32:42,519 - get changedGroupKeys:[]
+2022-05-07 16:32:42,542 - get changedGroupKeys:[]
+2022-05-07 16:33:12,284 - get changedGroupKeys:[]
+2022-05-07 16:33:20,062 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:33:20,063 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:33:20,090 - Completed initialization in 26 ms
+2022-05-07 16:33:20,257 - 执行过滤器
+2022-05-07 16:33:20,974 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:33:21,033 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:33:21,057 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:33:21,161 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:33:21,176 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:33:21,208 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:33:21,215 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@6e6e246
+2022-05-07 16:33:22,082 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:33:22,479 - 执行过滤器
+2022-05-07 16:33:34,805 - 执行过滤器
+2022-05-07 16:33:37,116 - 执行过滤器
+2022-05-07 16:33:41,804 - get changedGroupKeys:[]
+2022-05-07 16:34:11,318 - get changedGroupKeys:[]
+2022-05-07 16:34:31,088 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [polling-resp] config changed. dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:34:31,089 - get changedGroupKeys:[gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6]
+2022-05-07 16:34:31,126 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [data-received] dataId=gateway-server.yaml, group=dev, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, md5=0ab3751e809c44f9663b2743ee7759e3, content=server:
+  port: 38370
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  application:
+    nam..., type=yaml
+2022-05-07 16:34:31,130 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-context] dataId=gateway-server.yaml, group=dev, md5=0ab3751e809c44f9663b2743ee7759e3
+2022-05-07 16:34:32,375 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:34:33,471 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:34:33,538 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:34:33,539 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:34:33,574 - The following profiles are active: dev
+2022-05-07 16:34:33,594 - Started application in 2.452 seconds (JVM running for 134.413)
+2022-05-07 16:34:33,904 - Refresh keys changed: []
+2022-05-07 16:34:33,905 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-ok] dataId=gateway-server.yaml, group=dev, md5=0ab3751e809c44f9663b2743ee7759e3, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@77f8848f 
+2022-05-07 16:34:33,906 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [notify-listener] time cost=2776ms in ClientWorker, dataId=gateway-server.yaml, group=dev, md5=0ab3751e809c44f9663b2743ee7759e3, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@77f8848f 
+2022-05-07 16:34:47,754 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:34:49,081 - LOCAL_SNAPSHOT_PATH:C:\Users\fuxiaoli\nacos\config
+2022-05-07 16:34:49,168 - limitTime:5.0
+2022-05-07 16:34:49,995 - Ignore the empty nacos configuration and get it based on dataId[gateway-server] & group[dev]
+2022-05-07 16:34:50,014 - isMultiInstance:false
+2022-05-07 16:34:50,058 - Ignore the empty nacos configuration and get it based on dataId[gateway-server-dev.yaml] & group[dev]
+2022-05-07 16:34:50,060 - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='gateway-server-dev.yaml,dev'}, NacosPropertySource {name='gateway-server.yaml,dev'}, NacosPropertySource {name='gateway-server,dev'}]}
+2022-05-07 16:34:51,169 - The following profiles are active: dev
+2022-05-07 16:34:53,015 - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:34:53,026 - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:34:53,576 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-07 16:34:53,583 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-07 16:34:53,648 - Finished Spring Data repository scanning in 32ms. Found 0 Redis repository interfaces.
+2022-05-07 16:34:53,821 - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:34:53,861 - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2022-05-07 16:34:54,244 - BeanFactory id=9ded31b0-6b16-31d1-8603-00aba28b8998
+2022-05-07 16:34:55,346 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-07 16:34:56,018 - Tomcat initialized with port(s): 38370 (http)
+2022-05-07 16:34:56,056 - Initializing ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:34:56,058 - Starting service [Tomcat]
+2022-05-07 16:34:56,060 - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-05-07 16:34:56,475 - Initializing Spring embedded WebApplicationContext
+2022-05-07 16:34:56,476 - Root WebApplicationContext: initialization completed in 5260 ms
+2022-05-07 16:34:56,698 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:34:56,699 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:34:56,749 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17e0933c
+2022-05-07 16:34:59,178 - initializer namespace from System Property :null
+2022-05-07 16:34:59,183 - initializer namespace from System Environment :null
+2022-05-07 16:34:59,185 - initializer namespace from System Property :null
+2022-05-07 16:35:01,023 - 
+
+Using generated security password: 163d7ec4-cca6-49cf-b171-e5da507e6aee
+
+2022-05-07 16:35:01,625 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44384b4a, org.springframework.security.web.context.SecurityContextPersistenceFilter@ca546a1, org.springframework.security.web.header.HeaderWriterFilter@d969452, org.springframework.security.web.authentication.logout.LogoutFilter@590013c7, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@384472bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@356b6b5d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@710ae6a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cc3e49b, org.springframework.security.web.session.SessionManagementFilter@446c8c72, org.springframework.security.web.access.ExceptionTranslationFilter@1682e6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6481dce5]
+2022-05-07 16:35:01,666 - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ae3235e, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e27f603, org.springframework.security.web.header.HeaderWriterFilter@5da57a64, org.springframework.security.web.csrf.CsrfFilter@4522d793, org.springframework.security.web.authentication.logout.LogoutFilter@738a815c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6136e1fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1736c1e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46b6701e, org.springframework.security.web.session.SessionManagementFilter@5cdf221a, org.springframework.security.web.access.ExceptionTranslationFilter@44fb6ebd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cd7d5e1]
+2022-05-07 16:35:01,744 - No URLs will be polled as dynamic configuration sources.
+2022-05-07 16:35:01,745 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-05-07 16:35:02,193 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-07 16:35:02,567 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2022-05-07 16:35:05,776 - Starting filter initializer
+2022-05-07 16:35:05,815 - Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-07 16:35:06,508 - Starting ProtocolHandler ["http-nio-38370"]
+2022-05-07 16:35:06,581 - Tomcat started on port(s): 38370 (http) with context path ''
+2022-05-07 16:35:07,539 - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.10","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":38370,"scheduled":false,"serviceName":"dev@@gateway-server","stopped":false,"weight":1} to beat map.
+2022-05-07 16:35:07,572 - [REGISTER-SERVICE] 424fbe21-5ac6-40c7-8b72-95cecec8daa6 registering service dev@@gateway-server with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38370,"weight":1}
+2022-05-07 16:35:07,596 - nacos registry, dev gateway-server 192.168.1.10:38370 register finished
+2022-05-07 16:35:07,618 - Started GatewayServerApplication in 22.574 seconds (JVM running for 23.638)
+2022-05-07 16:35:07,709 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server-dev.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:35:07,714 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server-dev.yaml, group=dev, cnt=1
+2022-05-07 16:35:07,719 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server.yaml+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:35:07,720 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server.yaml, group=dev, cnt=1
+2022-05-07 16:35:07,722 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [subscribe] gateway-server+dev+424fbe21-5ac6-40c7-8b72-95cecec8daa6
+2022-05-07 16:35:07,723 - [fixed-101.43.110.173_31370-424fbe21-5ac6-40c7-8b72-95cecec8daa6] [add-listener] ok, tenant=424fbe21-5ac6-40c7-8b72-95cecec8daa6, dataId=gateway-server, group=dev, cnt=1
+2022-05-07 16:35:07,735 - get changedGroupKeys:[]
+2022-05-07 16:35:07,752 - get changedGroupKeys:[]
+2022-05-07 16:35:37,451 - get changedGroupKeys:[]
+2022-05-07 16:35:54,411 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-07 16:35:54,412 - Initializing Servlet 'dispatcherServlet'
+2022-05-07 16:35:54,431 - Completed initialization in 18 ms
+2022-05-07 16:35:54,577 - 执行过滤器
+2022-05-07 16:35:55,066 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:35:55,129 - Client: auth-server instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:35:55,162 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:35:55,234 - new ips(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:35:55,252 - current ips:(1) service: dev@@auth-server -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39270#DEFAULT#dev@@auth-server","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39270,"serviceName":"dev@@auth-server","weight":1}]
+2022-05-07 16:35:55,299 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:35:55,309 - DynamicServerListLoadBalancer for client auth-server initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=auth-server,current list of Servers=[192.168.1.10:39270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3c1f27a7
+2022-05-07 16:35:56,059 - 执行过滤器
+2022-05-07 16:35:56,185 - Flipping property: auth-server.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:36:06,969 - get changedGroupKeys:[]
+2022-05-07 16:36:11,827 - 执行过滤器
+2022-05-07 16:36:12,129 - 执行过滤器
+2022-05-07 16:36:25,090 - 执行过滤器
+2022-05-07 16:36:36,485 - get changedGroupKeys:[]
+2022-05-07 16:36:42,815 - 执行过滤器
+2022-05-07 16:36:42,816 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@98945f5b: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:36:42,974 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:36:42,986 - Client: quantization-front instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-front,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:36:43,002 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:36:43,019 - new ips(1) service: dev@@quantization-front -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39370#DEFAULT#dev@@quantization-front","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39370,"serviceName":"dev@@quantization-front","weight":1}]
+2022-05-07 16:36:43,024 - current ips:(1) service: dev@@quantization-front -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#39370#DEFAULT#dev@@quantization-front","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":39370,"serviceName":"dev@@quantization-front","weight":1}]
+2022-05-07 16:36:43,032 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:36:43,037 - DynamicServerListLoadBalancer for client quantization-front initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-front,current list of Servers=[192.168.1.10:39370],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:39370;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@626a7177
+2022-05-07 16:36:44,009 - Flipping property: quantization-front.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:36:53,134 - Error during filtering
+com.netflix.zuul.exception.ZuulException: 
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.error(FilterProcessor.java:105)
+	at com.netflix.zuul.ZuulRunner.error(ZuulRunner.java:112)
+	at com.netflix.zuul.http.ZuulServlet.error(ZuulServlet.java:145)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:83)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:166)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:37:06,064 - get changedGroupKeys:[]
+2022-05-07 16:37:35,581 - get changedGroupKeys:[]
+2022-05-07 16:37:51,725 - 执行过滤器
+2022-05-07 16:37:51,727 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@98945f5b: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:38:01,754 - Error during filtering
+com.netflix.zuul.exception.ZuulException: 
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.findZuulException(SendErrorFilter.java:118)
+	at org.springframework.cloud.netflix.zuul.filters.post.SendErrorFilter.run(SendErrorFilter.java:78)
+	at com.netflix.zuul.ZuulFilter.runFilter(ZuulFilter.java:117)
+	at com.netflix.zuul.FilterProcessor.processZuulFilter(FilterProcessor.java:193)
+	at com.netflix.zuul.FilterProcessor.runFilters(FilterProcessor.java:157)
+	at com.netflix.zuul.FilterProcessor.error(FilterProcessor.java:105)
+	at com.netflix.zuul.ZuulRunner.error(ZuulRunner.java:112)
+	at com.netflix.zuul.http.ZuulServlet.error(ZuulServlet.java:145)
+	at com.netflix.zuul.http.ZuulServlet.service(ZuulServlet.java:83)
+	at org.springframework.web.servlet.mvc.ServletWrappingController.handleRequestInternal(ServletWrappingController.java:166)
+	at org.springframework.cloud.netflix.zuul.web.ZuulController.handleRequest(ZuulController.java:45)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-07 16:38:05,100 - get changedGroupKeys:[]
+2022-05-07 16:38:34,613 - get changedGroupKeys:[]
+2022-05-07 16:39:03,387 - 执行过滤器
+2022-05-07 16:39:03,389 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@98945f5b: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:39:04,127 - get changedGroupKeys:[]
+2022-05-07 16:39:04,896 - 执行过滤器
+2022-05-07 16:39:04,898 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@98945f5b: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:39:09,467 - 执行过滤器
+2022-05-07 16:39:09,469 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@7b2984de: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:39:09,649 - Flipping property: quantization-center.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:39:09,657 - Client: quantization-center instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-center,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-05-07 16:39:09,663 - Using serverListUpdater PollingServerListUpdater
+2022-05-07 16:39:09,675 - new ips(1) service: dev@@quantization-center -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#38270#DEFAULT#dev@@quantization-center","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38270,"serviceName":"dev@@quantization-center","weight":1}]
+2022-05-07 16:39:09,679 - current ips:(1) service: dev@@quantization-center -> [{"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.10#38270#DEFAULT#dev@@quantization-center","ip":"192.168.1.10","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":38270,"serviceName":"dev@@quantization-center","weight":1}]
+2022-05-07 16:39:09,683 - Flipping property: quantization-center.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:39:09,686 - DynamicServerListLoadBalancer for client quantization-center initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=quantization-center,current list of Servers=[192.168.1.10:38270],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.1.10:38270;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@3f76975a
+2022-05-07 16:39:10,690 - Flipping property: quantization-center.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-05-07 16:39:16,184 - 执行过滤器
+2022-05-07 16:39:16,188 - 网关获取到认证对象：org.springframework.security.oauth2.provider.OAuth2Authentication@98945f5b: Principal: admin; Credentials: [PROTECTED]; Authenticated: true; Details: remoteAddress=0:0:0:0:0:0:0:1, tokenType=BearertokenValue=<TOKEN>; Granted Authorities: sys:user:list, sys:manage, sys:user, sys:permission:add, sys:index, sys:user:add, sys:permission:edit, sys:role:edit, sys:permission, sys:user:edit, sys:user:delete, sys:role:delete, sys:role:list, sys:permission:delete, sys:permission:list, sys:role, sys:role:add
+2022-05-07 16:39:33,641 - get changedGroupKeys:[]
+2022-05-07 16:40:03,157 - get changedGroupKeys:[]
+2022-05-07 16:40:32,671 - get changedGroupKeys:[]
+2022-05-07 16:41:02,199 - get changedGroupKeys:[]
