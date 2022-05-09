@@ -2,13 +2,14 @@ E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\aut
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\service\AbstractUserDetailsService.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\entities\SysRole.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\mapper\SysUserMapper.java
+E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\DruidConfig.java
+E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\TokenConfig.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\AuthServerApplication.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\AuthorizationServerConfig.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\SpringSecurityBean.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\service\impl\SysUserServiceImpl.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\mapper\SysPermissionMapper.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\SpringSecurityConfig.java
-E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\config\RedisConfig.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\entities\SysUser.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\service\CustomUserDetailsService.java
 E:\classes\repository\auth-parent\auth-server\src\main\java\com\quantization\auth\service\impl\SysPermissionServiceImpl.java

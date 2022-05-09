@@ -6,12 +6,13 @@ com\quantization\auth\entities\SysRole.class
 com\quantization\auth\service\AbstractUserDetailsService.class
 com\quantization\auth\service\SysPermissionService.class
 com\quantization\auth\service\impl\SysPermissionServiceImpl.class
-com\quantization\auth\config\RedisConfig.class
 com\quantization\auth\config\SpringSecurityConfig.class
 com\quantization\auth\mapper\SysPermissionMapper.class
+com\quantization\auth\config\TokenConfig.class
 com\quantization\auth\service\impl\SysUserServiceImpl.class
 com\quantization\auth\service\CustomUserDetailsService.class
 com\quantization\auth\service\SysUserService.class
+com\quantization\auth\config\DruidConfig.class
 com\quantization\auth\entities\SysPermission.class
 com\quantization\auth\AuthServerApplication.class
 com\quantization\auth\config\SpringSecurityBean.class
