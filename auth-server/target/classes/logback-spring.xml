@@ -13,15 +13,13 @@
         </encoder>    
     </appender>
     
-    <!-- 
     <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
     	<param name="Encoding" value="UTF-8"/>
-		<destination>101.43.110.173:37370</destination>
+		<destination>101.43.110.173:33170</destination>
 		<encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" >
  			<customFields>{"appname":"${application.name}"}</customFields>
 		</encoder>
 	</appender>
-	-->     
 	
     <!-- RollingFileAppender：滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
     <!-- 以下的大概意思是：1.先按日期存日志，日期变了，将前一天的日志文件名重命名为XXX%日期%索引，新的日志仍然是demo.log -->
@@ -47,7 +45,8 @@
     </appender>    
     <!-- 控制台输出日志级别 -->
     <root level="info">    
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="stash"/>
         <appender-ref ref="authLog"/>
     </root>    
     <!-- 指定项目中某个包，当有日志操作行为时的日志记录级别 -->
